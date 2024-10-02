@@ -11,7 +11,7 @@ export default {
         Poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        redO: '#EE4E4E',
+        redO: '#E76161',
       },
     },
   },
