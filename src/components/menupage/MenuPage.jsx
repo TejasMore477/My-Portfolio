@@ -11,7 +11,7 @@ function MenuPage({ showMenu, setShowMenu, handelMenu }) {
       className="w-1/2 h-[70vh] bg-transperant fixed top-[8px] right-[8px] rounded-3xl overflow-hidden z-50"
       initial={{ y: -800 }}  
       animate={showMenu ? { y: 0 } : { y: -800 }} 
-      transition={{ duration: 0.5, delay: 0.3, ease: easeInOut }}
+      transition={{ duration: 0.6, delay: 0.1, ease: easeInOut }}
     >
         <div className='bg-zinc-800 bg-opacity-10 backdrop-blur-sm py-[1.4rem] px-[4.5rem] rounded-3xl'>
         <div className="w-full flex items-center justify-end ">
