@@ -1,28 +1,32 @@
-import React, { useState } from 'react'
-import Navbar from './components/navbar/Navbar'
-import MenuPage from './components/menupage/MenuPage'
-import Landing from './components/heroSection/Landing'
+import React, { useEffect, useState } from 'react'
+import Mother from './Mother'
+import Cursor from './components/Cursor/Cursor'
 
 function App() {
-
-  const [showMenu, setShowMenu] = useState(false)
-  const handelMenu = () => {
-      setShowMenu(prev => !prev)
-  }
-  console.log(showMenu)
-
+  const [mousePosition, setMousePosition] = useState({
+    x:0,
+    y:0,
+  })
+  
+  console.log(mousePosition)
+  useEffect(()=>{
+    const mouseMove  = (e)=>{
+      console.log(e);
+      setMousePosition({
+        x:e.clientX,
+        y:e.clientY
+      })
+    }
+    window.addEventListener('mousemove', mouseMove)
+    return (
+      window.removeEventListener('mouseleave', mouseMove)
+    )
+  },[])
   return (
-  <>
-    <div className='bg-zinc-950 h-screen w-full text-white overflow-hidden'>
-      <Navbar handelMenu={handelMenu}/>
-      <MenuPage showMenu={showMenu} setShowMenu={setShowMenu} handelMenu={handelMenu}/>
-      <Landing/>
+    <div>
+      <Cursor mousePosition={mousePosition} setMousePosition={setMousePosition}/>
+      <Mother/>
     </div>
-    {/* <div className='h-screen w-full bg-green-700'>
-      <RevealLinks/>
-    </div>
-    <div className='h-screen w-full bg-white'></div> */}
-  </>
   )
 }
 
