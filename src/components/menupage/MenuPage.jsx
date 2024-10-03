@@ -3,7 +3,6 @@ import Menu from '../navbar/Menu';
 import { motion } from 'framer-motion';
 import { easeInOut } from 'framer-motion';
 import RightCompo from './RightCompo';
-import { button } from 'framer-motion/client';
 
 function MenuPage({ showMenu, setShowMenu, handelMenu }) {
   return (
