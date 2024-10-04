@@ -30,7 +30,7 @@ function App() {
     <div className={`${loaderAnime? 'overflow-y-auto h-screen w-full':'overflow-y-hidden h-screen w-full'}`}>
       <Cursor mousePosition={mousePosition} setMousePosition={setMousePosition}/>
       <Loader loaderAnime={loaderAnime} setLoaderAnime={setLoaderAnime}/>
-      <Mother/>
+      <Mother loaderAnime={loaderAnime} />
     </div>
   )
 }

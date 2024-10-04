@@ -3,7 +3,7 @@ import Circle from './Circle'
 import TitleText from './TitleText'
 import Border from './Border'
 
-function Landing() {
+function Landing({ loaderAnime }) {
   return (
     <div className='h-[100vh] flex flex-col items-start justify-end px-20'>
       <div className='pb-16 w-full'>
@@ -12,8 +12,8 @@ function Landing() {
       <p className='text-xs font-Orbitron font-light tracking-[0.2rem]'>Scroll Down</p>
       </div>
       <div className='flex items-center justify-between w-full'>
-        <TitleText/>
-        <Circle/>
+        <TitleText loaderAnime={loaderAnime} />
+        <Circle loaderAnime={loaderAnime} />
       </div>
     </div>
   )
