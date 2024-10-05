@@ -9,7 +9,7 @@ function Mother({loaderAnime }) {
   const handelMenu = () => {
       setShowMenu(prev => !prev)
   }
-  console.log(showMenu)
+  // console.log(showMenu)
 
   
 

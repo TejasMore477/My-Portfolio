@@ -11,10 +11,10 @@ function App() {
 
   const [loaderAnime, setLoaderAnime] = useState(false)
   
-  console.log(loaderAnime)
+  // console.log(loaderAnime)/
   useEffect(()=>{
     const mouseMove  = (e)=>{
-      console.log(e);
+      // console.log(e);
       setMousePosition({
         x:e.clientX,
         y:e.clientY
