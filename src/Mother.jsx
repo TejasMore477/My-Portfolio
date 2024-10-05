@@ -9,13 +9,12 @@ function Mother({loaderAnime }) {
   const handelMenu = () => {
       setShowMenu(prev => !prev)
   }
-  // console.log(showMenu)
 
   
 
   return (
   <>
-
+  
     <div className='bg-zinc-950 min-h-screen w-full text-white overflow-hidden'>
       <Navbar handelMenu={handelMenu}/>
       <MenuPage showMenu={showMenu} setShowMenu={setShowMenu} handelMenu={handelMenu}/>
