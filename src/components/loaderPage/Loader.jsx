@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { BsArrowUpRight } from "react-icons/bs";
 import { easeInOut } from 'framer-motion';
+import ganpatiBappa from '/src/assets/images/ganpatiBappa.png'
 
 function Loader({setLoaderAnime, loaderAnime}) {
   const textVariants = {
@@ -30,6 +31,9 @@ function Loader({setLoaderAnime, loaderAnime}) {
     transition={{ duration: 1, delay: 0.2, ease: easeInOut }}
     >
       <div className="flex items-center w-full relative">
+
+        <img className="size-20 " src={ganpatiBappa} alt="Shri Ganesha" />
+
         <h2 className="text-4xl font-light px-4 leading-none">
           Tejas Madhukar More
         </h2>
@@ -67,7 +71,7 @@ function Loader({setLoaderAnime, loaderAnime}) {
           </motion.div>
         </h2>
 
-        <div className="absolute bottom-[-35%] right-5 ">
+        <div className="absolute bottom-[-10%] right-5 ">
           <p className="text-xs font-extralight tracking-wider leading-none">
             Click arrow to open
           </p>
