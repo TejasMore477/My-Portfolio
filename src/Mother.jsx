@@ -3,6 +3,7 @@ import Navbar from './components/navbar/Navbar'
 import MenuPage from './components/menupage/MenuPage'
 import Landing from './components/heroSection/Landing'
 import LetsDo from './components/letsDoSection/LetsDo'
+import About from './components/About/About'
 
 function Mother({loaderAnime }) {
 
@@ -18,6 +19,7 @@ function Mother({loaderAnime }) {
       <MenuPage showMenu={showMenu} setShowMenu={setShowMenu} handelMenu={handelMenu}/>
       <Landing loaderAnime={loaderAnime} />
       <LetsDo/>
+      <About/>
     </div>
   </>
   )
