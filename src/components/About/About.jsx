@@ -1,7 +1,7 @@
 import React from "react";
-import { BsArrowUpRight } from "react-icons/bs";
 
 function About() {
+      const connect = "< Contact Me >"
   return (
     <div className="w-full h-screen bg-zinc-950 px-20 py-16 grid place-content-center">
       <div className="w-full h-full flex items-center justify-between">
@@ -12,8 +12,9 @@ function About() {
             alt=""
           />
           <div className="">
+            <h2 className="font-poppins">Blood@ <span className="text-redO">A+</span></h2>
             <h2 className="items-center font-Poppins tracking-wider font-extralight pb-10">
-              Open for work and collaborations
+              Open for work and collaborations.
             </h2>
 
             <p className="font-Orbitron text-xs tracking-[0.2em] leading-none py-1">
@@ -29,7 +30,7 @@ function About() {
         </div>
         <div className="w-2/3 h-full relative px-3 py-5">
           <h3 className="w-full font-Poppins text-[1.3rem] leading-[1.4rem] font-light py-10">
-            I am Tejas More, a 3rd-year student and a creative web developer
+            I am <a className="text-redO font-Poppins">Tejas Madhukar More</a>, a 3rd-year student and a creative web developer
             from Maharashtra, India. I love building interactive websites that
             blend design and functionality seamlessly.
           </h3>
@@ -47,14 +48,17 @@ function About() {
           <p className="w-full font-Poppins text-[1.3rem] leading-[1.4rem] font-light py-10">
             I've been interested in design and creativity since I was young.
             What started as a hobby, learning from YouTube, soon became a real
-            passion. I improved my skills at Scheryain's coding school, where
-            the Frontend Domination course helped boost both my creativity and
+            passion. I improved my skills at <a className="text-redO font-Poppins">Sheryians Coding School</a>, where
+            the <a className="text-redO font-Poppins">Frontend Domination</a> course helped boost both my creativity and
             problem-solving. For me, design is all about tackling challenges
             with bold ideas and clear communication. Over time, I've explored
             different areas, from UI/UX and illustrations to product design,
             branding, and art direction. Every project I work on is a chance to
             blend creativity with practical solutions.
           </p>
+          <div className='w-full text-end'>
+            <button className='font-Poppins text-sm  text-end text-redO'>{connect}</button>
+          </div>
         </div>
       </div>
     </div>
