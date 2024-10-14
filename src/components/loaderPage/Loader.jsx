@@ -25,7 +25,7 @@ function Loader({setLoaderAnime, loaderAnime}) {
 
   return (
     <motion.div 
-    className="max-w-screen-2xl mx-auto h-screen bg-zinc-900 text-white font-Poppins grid place-content-center absolute z-30"
+    className="w-full h-screen bg-zinc-900 text-white font-Poppins grid place-content-center absolute z-30"
     initial={{y:0, opacity:1}}
     animate={ loaderAnime && {y:"-200%"} }
     transition={{ duration: 1, delay: 0.2, ease: easeInOut }}

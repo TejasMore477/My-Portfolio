@@ -3,7 +3,7 @@ import ContactMe from "../About/ContactMe";
 
 function LetsDo() {
   return (
-    <div className="max-w-screen-2xl mx-auto h-screen py-20 px-20 text-center relative">
+    <div className="w-full h-screen py-20 px-20 text-center relative">
       <div className="h-[35vh] w-full mb-3">
         <h2 className="text-[9rem] font-Poppins font-semibold text-redO leading-[5rem] tracking-tighter">
           Collaborate,
