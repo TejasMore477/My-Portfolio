@@ -5,7 +5,7 @@ import Border from './Border'
 
 function Landing({ loaderAnime }) {
   return (
-    <div className='h-[100vh] flex flex-col items-start justify-end px-20'>
+    <div className='h-[100vh] max-w-screen-2xl mx-auto flex flex-col items-start justify-end px-20'>
       <div className='pb-16 w-full'>
       <p className='text-xs font-Orbitron font-light tracking-[0.2rem]'>@WebDeveloper</p>
       <Border marginY={3}/>
