@@ -5,6 +5,33 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+    --redOO: hsl(0,73.6%,64.3%);
+    --zinc900: rgb(11, 11, 12);
+}
+
 *{
     cursor:none;
+}
+
+a,button{
+    cursor: none;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--redOO);
+    border-radius:50px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--zinc900);
+}
+/* Firefox */
+* {
+    scrollbar-width: thin; /* Set the width of the scrollbar to "thin" */
+    scrollbar-color: var(--redOO) var(--zinc900); /* First color is the thumb, second is the track */
 }
