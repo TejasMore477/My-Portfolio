@@ -1,5 +1,6 @@
 import React from "react";
 import ContactMe from "./ContactMe";
+import LocalTime from "../dateTime/LocalTime";
 
 function About() {
   return (
@@ -18,16 +19,7 @@ function About() {
             <h2 className="items-center font-Poppins tracking-wider font-extralight pb-10">
               Open for work and collaborations.
             </h2>
-
-            <p className="font-Orbitron text-xs tracking-[0.2em] leading-none py-1">
-              tejasmore660@gmail.com
-            </p>
-            <p className="font-Orbitron text-xs tracking-[0.2em] leading-none py-1">
-              Maharashtra, India
-            </p>
-            <p className="font-Orbitron text-xs tracking-[0.2em] leading-none py-1">
-              Monday, sep 30-20-2024
-            </p>
+            <LocalTime pos={"start"}/>
           </div>
         </div>
         <div className="w-2/3 h-full relative px-3 py-5">

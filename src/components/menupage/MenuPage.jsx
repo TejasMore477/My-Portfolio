@@ -3,6 +3,7 @@ import Menu from '../navbar/Menu';
 import { motion } from 'framer-motion';
 import { easeInOut } from 'framer-motion';
 import RightCompo from './RightCompo';
+import LocalTime from '../dateTime/LocalTime';
 
 function MenuPage({ showMenu, setShowMenu, handelMenu }) {
   return (
@@ -25,11 +26,7 @@ function MenuPage({ showMenu, setShowMenu, handelMenu }) {
         </div>
 
         </div>
-        <div className='py-10 px-[4.5rem]'>
-        <p className='text-end font-Orbitron text-xs tracking-widest leading-none py-1'>tejasmore660@gmail.com</p>
-        <p className='text-end font-Orbitron text-xs tracking-widest leading-none py-1'>Maharashtra, India</p>
-        <p className='text-end font-Orbitron text-xs tracking-widest leading-none py-1'>Monday, sep 30-20-2024</p>
-        </div>
+        <LocalTime/>
 
 
     </motion.div>
