@@ -30,8 +30,9 @@ a,button{
 ::-webkit-scrollbar-track{
     background-color: var(--zinc900);
 }
+
 /* Firefox */
 * {
-    scrollbar-width: thin; /* Set the width of the scrollbar to "thin" */
-    scrollbar-color: var(--redOO) var(--zinc900); /* First color is the thumb, second is the track */
+    scrollbar-width: thin;
+    scrollbar-color: var(--redOO) var(--zinc900); 
 }
