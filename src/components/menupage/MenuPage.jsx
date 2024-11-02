@@ -8,7 +8,7 @@ import LocalTime from '../dateTime/LocalTime';
 function MenuPage({ showMenu, setShowMenu, handelMenu }) {
   return (
     <motion.div
-      className="w-1/2 h-[70vh] bg-transperant fixed top-[8px] right-[8px] rounded-3xl overflow-hidden z-50"
+      className="w-1/2 h-[70vh] bg-transperant fixed top-[8px] right-[8px] rounded-3xl overflow-hidden z-[999]"
       initial={{ y: -800 }}  
       animate={showMenu ? { y: 0 } : { y: -800 }} 
       transition={{ duration: 0.6, delay: 0.1, ease: easeInOut }}
