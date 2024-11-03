@@ -4,11 +4,11 @@ import LocalTime from "../dateTime/LocalTime";
 
 function About() {
   return (
-    <div className="w-full h-screen bg-zinc-950 px-20 py-16 grid place-content-center">
+    <div className="w-full h-screen bg-neutral-950 px-20 py-16 grid place-content-center rounded-b-xl">
       <div className="w-full h-full flex items-center justify-center gap-5">
-        <div className="w-1/4 h- bg-zinc-800 bg-opacity-10 backdrop-blur-sm rounded-lg z-50 flex items-center gap-5 px-10 flex-col py-10">
+        <div className="w-1/4 bg-zinc-800 bg-opacity-10 backdrop-blur-sm rounded-lg z-20 flex items-center gap-5 px-10 flex-col py-10">
           <img
-            className="size-64 object-cover object-top rounded-md"
+            className="size-64 object-cover object-top rounded-md shadow-2xl shadow-zinc-950 "
             src="src/assets/images/profile/andres-hernandez-nlNR4zy7g_I-unsplash.jpg"
             alt=""
           />

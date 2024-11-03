@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { easeInOut } from 'framer-motion';
 import RightCompo from './RightCompo';
 import LocalTime from '../dateTime/LocalTime';
+import LinksComp from './LinksComp';
 
 function MenuPage({ showMenu, setShowMenu, handelMenu }) {
   return (
@@ -19,11 +20,7 @@ function MenuPage({ showMenu, setShowMenu, handelMenu }) {
         </div>
 
             <RightCompo/>
-        <div className='w-full flex items-center justify-between '>
-            {["LinkedIn", "GitHub", "Instagram", "Frontend Mentor", "LeetCode"].map((links, index)=>(
-                <button key={index} type='button' className='font-Poppins text-sm font-extralight'>{links}</button>
-            ))}
-        </div>
+            <LinksComp/>
 
         </div>
         <LocalTime/>
