@@ -1,18 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
 
-function Cursor({ mousePosition }) {
+function Cursor() {
   const [cursorVariant, setCursorVariant] = useState("default");
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  // for cursor states
+  // Cursor animation variants
   const variants = {
     default: {
       x: mousePosition.x - 32,
       y: mousePosition.y - 32,
       scale: 1,
-      transition: {
-        duration:0.1,
-      },
+      transition: { duration: 0.1 },
     },
     hover: {
       scale: 1.5,
@@ -36,45 +35,51 @@ function Cursor({ mousePosition }) {
     },
   };
 
-  const handleClick = () => {
+  // Handle click event
+  const handleClick = useCallback(() => {
     setCursorVariant("click");
-    setTimeout(() => setCursorVariant("default"), 200); 
-  };
+    setTimeout(() => setCursorVariant("default"), 200);
+  }, []);
 
+  // Handle mouse position update
   useEffect(() => {
+    const handleMouseMove = (e) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+
     const handleMouseOver = () => setCursorVariant("hover");
     const handleMouseLeave = () => setCursorVariant("default");
 
-    // elements which triggers the hover effect
+    // Elements triggering the hover effect
     const interactiveElements = document.querySelectorAll('a, button, Link');
-    interactiveElements.forEach(el => {
-      el.addEventListener('mouseover', handleMouseOver);
-      el.addEventListener('mouseleave', handleMouseLeave);
+    interactiveElements.forEach((el) => {
+      el.addEventListener("mouseover", handleMouseOver);
+      el.addEventListener("mouseleave", handleMouseLeave);
     });
 
-    document.addEventListener('click', handleClick); 
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("click", handleClick);
 
+    // Cleanup event listeners
     return () => {
-      // Cleanup hover and click 
-      interactiveElements.forEach(el => {
-        el.removeEventListener('mouseover', handleMouseOver);
-        el.removeEventListener('mouseleave', handleMouseLeave);
+      interactiveElements.forEach((el) => {
+        el.removeEventListener("mouseover", handleMouseOver);
+        el.removeEventListener("mouseleave", handleMouseLeave);
       });
-      document.removeEventListener('click', handleClick);
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("click", handleClick);
     };
-  }, []);
+  }, [handleClick]);
 
   return (
-    <>
-      <motion.div
-        className="w-16 h-16 bg-white opacity-[0.28] rounded-full fixed z-40 pointer-events-none grid place-content-center"
-        variants={variants}
-        animate={cursorVariant}
-        style={{ x: mousePosition.x - 32, y: mousePosition.y - 32 }}
-      >
-        <div className='bg-zinc-950 w-1 h-1 rounded-full'></div>
-      </motion.div>
-    </>
+    <motion.div
+      className="w-16 h-16 bg-white opacity-[0.28] rounded-full fixed z-40 pointer-events-none grid place-content-center"
+      variants={variants}
+      animate={cursorVariant}
+      style={{ x: mousePosition.x - 32, y: mousePosition.y - 32 }}
+    >
+      <div className="bg-zinc-950 w-1 h-1 rounded-full"></div>
+    </motion.div>
   );
 }
 
