@@ -45,14 +45,14 @@ function PlayReel() {
     // Animate words
     tl.to(play.current, {
       x: "-400%",
-      duration: 1,
-      scale:2,
+      duration: 4,
+      scale:3,
       ease: "power1.out",
     },a)
     .to(reel.current, {
       x: "400%",
-      duration: 1,
-      scale:2,
+      duration: 4,
+      scale:3,
       ease: "power1.out",
     },a);
 
