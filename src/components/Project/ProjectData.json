@@ -1,0 +1,117 @@
+[
+  {
+    "Image": "/src/assets/images/projects/project-obays.png",
+    "Heading": "Obays: Design Agency",
+    "SubHeading": "Digital design agency focused on creative UI/UX design",
+    "Title": "Design Agency - Ukraine",
+    "SubTitle": "UI clone",
+    "Year": "2024",
+    "Skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "GSAP",
+      "Locomotive.JS",
+      "Shery.JS"
+    ],
+    "GitHub": "https://github.com/TejasMore477/Minor-project-4-Obays-Agency-Clone",
+    "LiveLink": "https://tejasmore477.github.io/Minor-project-4-Obays-Agency-Clone/",
+    "Para1": "",
+    "Para2": "",
+    "Para3": ""
+  },
+
+  {
+    "Image": "/src/assets/images/projects/project-ochi.png",
+    "Heading": "Ochi: Presentation Design Agency",
+    "SubHeading": "Designing eye-opening presentations for forward-thinking businesses ",
+    "Title": "Design Agency - Lviv",
+    "SubTitle": "UI clone",
+    "Year": "2024",
+    "Skills": [
+      "React.JS",
+      "TailwindCSS",
+      "Framermotion",
+      "GSAP",
+      "Locomotive.JS"
+    ],
+    "GitHub": "https://github.com/TejasMore477/Minor-Project-5-Ochi-UI-React",
+    "LiveLink": "https://tejasmore477.github.io/Minor-Project-5-Ochi-UI-React/",
+    "Para1": "",
+    "Para2": "",
+    "Para3": ""
+  },
+
+  {
+    "Image": "/src/assets/images/projects/project-arock.png",
+    "Heading": "AROCK",
+    "SubHeading": "Sites Of The Day on Awwwards.com",
+    "Title": "Sites Of The Day on Awwwards.com",
+    "SubTitle": "UI clone",
+    "Year": "2024",
+    "Skills": ["React.JS", "TailwindCSS", "GSAP"],
+    "GitHub": "https://github.com/TejasMore477/Arock-Portfolio-",
+    "LiveLink": "https://arock-portfolio.vercel.app/",
+    "Para1": "",
+    "Para2": "",
+    "Para3": ""
+  },
+
+  {
+    "Image": "/src/assets/images/projects/project-refokus.png",
+    "Heading": "Refokus",
+    "SubHeading": "Delivering high-end results in a fraction of the time",
+    "Title": "Awwwards Honorable Mention",
+    "SubTitle": "UI clone",
+    "Year": "2024",
+    "Skills": ["React.JS", "TailwindCSS", "Framer Motion", "Locomotive Scroll"],
+    "GitHub": "https://github.com/TejasMore477/Refokus-UI-Clone-Reactjs",
+    "LiveLink": "https://refokus-ui-clone-reactjs.vercel.app/",
+    "Para1": "",
+    "Para2": "",
+    "Para3": ""
+  },
+
+  {
+    "Image": "/src/assets/images/projects/project-exoape.png",
+    "Heading": "Exo Ape - Awwwards site of the day",
+    "SubHeading": "Global digital design studio partnering with brands and businesses",
+    "Title": "Digital Design Studio - Netherland",
+    "SubTitle": "UI clone",
+    "Year": "2024",
+    "Skills": [
+      "ReactJS",
+      "TailwindCSS",
+      "Framer Motion",
+      "Locomotive Scroll",
+      "GSAP Animations"
+    ],
+    "GitHub": "https://github.com/TejasMore477/ExoApe-UI-Clone-Reactjs",
+    "LiveLink": "https://exo-ape-ui-clone-reactjs.vercel.app/",
+    "Para1": "",
+    "Para2": "",
+    "Para3": ""
+  },
+
+  {
+    "Image": "/src/assets/images/projects/project-premier.png",
+    "Heading": "PREMIRE-Model Management Website",
+    "SubHeading": "Design sourced from Pinterest",
+    "Title": "Hackethon Project",
+    "SubTitle": "With user journey analytics",
+    "Year": "2023",
+    "Skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "GSAP/Scroll-Trigger",
+      "Locomotive.JS",
+      "Shephard.JS"
+    ],
+    "GitHub": "https://github.com/TejasMore477/Minor-project-1-PREMIER",
+    "LiveLink": "https://tejasmore477.github.io/Minor-project-1-PREMIER/",
+    "Para1": "",
+    "Para2": "",
+    "Para3": ""
+  }
+]

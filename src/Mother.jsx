@@ -9,6 +9,7 @@ import LetsDo from "./components/letsDoSection/LetsDo";
 import About from "./components/About/About";
 import Footer from "./components/footer/Footer";
 import PlayReel from "./components/reel/PlayReel";
+import Projects from "./components/Project/Projects"
 
 
 function Mother({ loaderAnime }) {
@@ -44,6 +45,7 @@ function Mother({ loaderAnime }) {
         />
         <Landing loaderAnime={loaderAnime} />
         <PlayReel />
+        <Projects/>
         <LetsDo />
         <About />
       </div>
