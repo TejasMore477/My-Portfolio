@@ -47,7 +47,9 @@ function Mother({ loaderAnime }) {
         />
         <Landing loaderAnime={loaderAnime} />
         <PlayReel />
-        <Projects/>
+        <Projects  handelMenu={handelMenu} showMenu={showMenu}
+          setShowMenu={setShowMenu}
+         />
         <LetsDo />
         <About />
         <CatchTheBallGame/>
