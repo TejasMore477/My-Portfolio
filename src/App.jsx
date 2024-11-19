@@ -53,16 +53,16 @@ function App() {
         mousePosition={mousePosition}
         setMousePosition={setMousePosition}
       />
-      {/* <Loader loaderAnime={loaderAnime} setLoaderAnime={setLoaderAnime} />
+      <Loader loaderAnime={loaderAnime} setLoaderAnime={setLoaderAnime} />
       {onlineStatus ? (
         <Mother loaderAnime={loaderAnime} />
       ) : (
         <div className="w-full h-screen overflow-hidden">
           <CatchTheBallGame />
         </div>
-      )} */}
+      )}
 
-      <PageNotFound/>
+      {/* <PageNotFound/> */}
       
     </div>
   );
