@@ -48,9 +48,9 @@ function CatchTheBallGame({ onlineStatus }) {
       initial={{ y: 0, opacity: 1 }}
       animate={isOnline && { y: "200%" }}
       transition={{ duration: 1, delay: 4, ease: easeInOut }}
-      className="h-screen overflow-hidden relative -z-30 flex flex-col items-center justify-center text-white bg-black text-center"
+      className="h-screen overflow-hidden relative flex flex-col items-center justify-center text-white bg-black text-center"
     >
-      <div className="w-full fixed text-center top-[20%] -z-30 flex items-center flex-col">
+      <div className="w-full fixed text-center top-[20%] flex items-center flex-col">
         <div className="w-[25%] text-center overflow-hidden">
           <motion.h1 className="text-[3rem] mb-4 font-Poppins leading-none tracking-tight">
             Catch the Ball
@@ -66,22 +66,22 @@ function CatchTheBallGame({ onlineStatus }) {
       </div>
 
       {gameOver ? (
-        <div className="text-center -z-30 mt-10">
+        <div className="text-center mt-10">
           <motion.h2
-            className="text-redO text-[6rem] leading-none tracking-tight mb-4 font-Poppins font-semibold"
+            className="text-redO text-[6rem] leading-none tracking-tight mb-4 font-Poppins font-semibold "
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.5, delay: 0 }}
           >
             Game Over!
           </motion.h2>
-          <p className="text-xl mb-4">
+          <p className="text-xl mb-4 ">
             Final Score:{" "}
             <span className="text-redO font-Orbitron">{score}</span>
           </p>
           <motion.button
             onClick={resetGame}
-            className="px-4 py-2 text-redO border-redO border-[1px] rounded mt-2 hover:bg-redO hover:text-black hover:border-black ease-in-out duration-300"
+            className="px-4 py-2  text-redO border-redO border-[1px] rounded mt-2 hover:bg-redO hover:text-black hover:border-black ease-in-out duration-300"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.5 }}
@@ -108,13 +108,13 @@ function CatchTheBallGame({ onlineStatus }) {
           transition={{
             duration: Math.random() * 0.4 + 0.3, // Randomize duration for variety
           }}
-          className="bg-red-500 rounded-full relative cursor-none -z-20"
+          className="bg-red-500 rounded-full relative cursor-none z-10"
           whileTap={{ scale: 0 }} // Catching effect
         />
       )}
 
       {!gameOver && (
-        <p className="mt-8 text-sm font-Poppins font-extralight fixed -z-30 top-[45%] left-[41.5%]">
+        <p className="mt-8 text-sm font-Poppins font-extralight fixed top-[45%] left-[41.5%] ">
           Click the Ball{" "}
           <span className="pl-20">to catch it and increase your score!</span>
         </p>
