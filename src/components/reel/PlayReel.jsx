@@ -68,6 +68,34 @@ function PlayReel() {
     };
   }, [playX, reelX]);
 
+ // Add click event for playing video with sound
+  useEffect(() => {
+    const handleReelClick = () => {
+      if (vid.current) {
+        if (vid.current.paused) {
+          vid.current.muted = false; // Unmute 
+          vid.current.play(); // Play 
+        } else {
+          vid.current.pause(); // Pause 
+          vid.current.muted = true; // Mute 
+        }
+      }
+    };
+  
+    const reelElement = parentRef.current;
+    console.log(reelElement)
+    if (reelElement) {
+      reelElement.addEventListener('click', handleReelClick);
+    }
+  
+    return () => {
+      if (reelElement) {
+        reelElement.removeEventListener('click', handleReelClick);
+      }
+    };
+  }, []);
+  
+
   return (
     <div
       ref={parentRef}
