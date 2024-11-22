@@ -1,6 +1,6 @@
 [
   {
-    "Image": "/src/assets/images/projects/project-obays.png",
+    "Image": "/src/assets/images/projects/ProjectObays.png",
     "Heading": "Obays: Design Agency",
     "SubHeading": "Digital design agency focused on creative UI/UX design",
     "Title": "Design Agency - Ukraine",
@@ -22,7 +22,7 @@
   },
 
   {
-    "Image": "/src/assets/images/projects/project-ochi.png",
+    "Image": "/src/assets/images/projects/ProjectOchi.png",
     "Heading": "Ochi: Presentation Design Agency",
     "SubHeading": "Designing eye-opening presentations for forward-thinking businesses ",
     "Title": "Design Agency - Lviv",
@@ -43,7 +43,7 @@
   },
 
   {
-    "Image": "/src/assets/images/projects/project-arock.png",
+    "Image": "/src/assets/images/projects/ProjectArock.png",
     "Heading": "AROCK",
     "SubHeading": "Sites Of The Day on Awwwards.com",
     "Title": "Sites Of The Day on Awwwards.com",
@@ -58,7 +58,7 @@
   },
 
   {
-    "Image": "/src/assets/images/projects/project-refokus.png",
+    "Image": "/src/assets/images/projects/ProjectRefokus.png",
     "Heading": "Refokus",
     "SubHeading": "Delivering high-end results in a fraction of the time",
     "Title": "Awwwards Honorable Mention",
