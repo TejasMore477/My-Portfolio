@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
 
-function Cursor() {
+function Cursor({ mousePosition, setMousePosition }) {
   const [cursorVariant, setCursorVariant] = useState("default");
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  // const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   // Cursor animation variants
   const variants = {
