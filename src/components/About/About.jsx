@@ -12,14 +12,14 @@ function About() {
             src="src/assets/images/profile/andres-hernandez-nlNR4zy7g_I-unsplash.jpg"
             alt=""
           />
-          <div className="">
+          <div>
             <h2 className="font-poppins">
               Blood@ <span className="text-redO">A+</span>
             </h2>
             <h2 className="items-center font-Poppins tracking-wider font-extralight pb-10">
               Open for work and collaborations.
             </h2>
-            <LocalTime pos={"start"}/>
+            <LocalTime pos={"start"} />
           </div>
         </div>
         <div className="w-2/3 h-full relative px-3 py-5">

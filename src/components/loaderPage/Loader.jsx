@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { BsArrowUpRight } from "react-icons/bs";
-import { easeInOut } from 'framer-motion';
-import ganpatiBappa from '/src/assets/images/ganpatiBappa.png'
+import { easeInOut } from "framer-motion";
+import ganpatiBappa from "/src/assets/images/ganpatiBappa.png";
 
-function Loader({setLoaderAnime, loaderAnime}) {
+function Loader({ setLoaderAnime, loaderAnime }) {
   const textVariants = {
-    hidden: { opacity: 0, },
+    hidden: { opacity: 0 },
     visible: { opacity: 1 },
-    exit: { opacity: 0 }
+    exit: { opacity: 0 },
   };
 
   const text = "Developer";
@@ -24,14 +24,13 @@ function Loader({setLoaderAnime, loaderAnime}) {
   }, []);
 
   return (
-    <motion.div 
-    className="w-full h-screen overflow-hidden bg-zinc-900 text-white font-Poppins grid place-content-center absolute z-30"
-    initial={{y:0, opacity:1}}
-    animate={ loaderAnime && {y:"-200%"} }
-    transition={{ duration: 1, delay: 0.2, ease: easeInOut }}
+    <motion.div
+      className="w-full h-screen overflow-hidden bg-zinc-900 text-white font-Poppins grid place-content-center absolute z-30"
+      initial={{ y: 0, opacity: 1 }}
+      animate={loaderAnime && { y: "-200%" }}
+      transition={{ duration: 1, delay: 0.2, ease: easeInOut }}
     >
       <div className="flex items-center w-full relative">
-
         <img className="size-20 " src={ganpatiBappa} alt="Shri Ganesha" />
 
         <h2 className="text-4xl font-light px-4 leading-none">
@@ -40,7 +39,7 @@ function Loader({setLoaderAnime, loaderAnime}) {
 
         <motion.button
           type="button"
-          onClick={() => (setLoaderAnime(prev => !prev ))}
+          onClick={() => setLoaderAnime((prev) => !prev)}
           className="h-12 w-12 border-solid border-[2px] border-redO rounded-full grid place-content-center"
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}

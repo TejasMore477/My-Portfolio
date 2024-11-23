@@ -1,9 +1,8 @@
-import React, { useEffect, useState, useCallback } from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect, useState, useCallback } from "react";
+import { motion } from "framer-motion";
 
 function Cursor({ mousePosition, setMousePosition }) {
   const [cursorVariant, setCursorVariant] = useState("default");
-  // const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   // Cursor animation variants
   const variants = {
@@ -51,7 +50,7 @@ function Cursor({ mousePosition, setMousePosition }) {
     const handleMouseLeave = () => setCursorVariant("default");
 
     // Elements triggering the hover effect
-    const interactiveElements = document.querySelectorAll('a, button, Link');
+    const interactiveElements = document.querySelectorAll("a, button, Link");
     interactiveElements.forEach((el) => {
       el.addEventListener("mouseover", handleMouseOver);
       el.addEventListener("mouseleave", handleMouseLeave);
