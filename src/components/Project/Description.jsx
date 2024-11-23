@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 function Description({ descriptionData }) {
@@ -22,16 +23,28 @@ function Description({ descriptionData }) {
           </p>
         </div>
         <div className="flex items-center justify-start gap-10">
-          <a
+
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 300 }}
             className="font-Poppins text-sm text-end text-redO"
             href={descriptionData.GitHub}
             target="blank"
-          >{"< GitHub >"}</a>
-          <a
+          >
+            {"< GitHub >"}
+          </motion.a>
+
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 300 }}
             className="font-Poppins text-sm text-end text-redO"
             href={descriptionData.LiveLink}
             target="blank"
-          > {"< Live Link >"} </a>
+          >
+            {" "}
+            {"< Live Link >"}{" "}
+          </motion.a>
+          
         </div>
       </div>
       <div className="w-[20%] h-[40vh]  grid place-content-center gap-10">

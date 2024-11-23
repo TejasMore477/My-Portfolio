@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectContainer from "./ProjectContainer";
 import Border from "../heroSection/Border";
+import { motion } from "framer-motion";
 
 function Showcase() {
   return (
@@ -19,9 +20,14 @@ function Showcase() {
       </div>
       <ProjectContainer />
       <div className="flex items-center justify-center">
-        <a className="font-Poppins text-sm text-end text-redO" href="">
+        <motion.a
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 300 }}
+          className="font-Poppins text-sm text-end text-redO"
+          href=""
+        >
           {"< View All Projects >"}
-        </a>
+        </motion.a>
       </div>
     </div>
   );
