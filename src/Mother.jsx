@@ -46,11 +46,11 @@ function Mother({ loaderAnime }) {
         <Landing loaderAnime={loaderAnime} />
         <PlayReel />
         <Showcase/>
-        <Projects  handelMenu={handelMenu} showMenu={showMenu}
+        {/* <Projects  handelMenu={handelMenu} showMenu={showMenu}
           setShowMenu={setShowMenu}
-         />
+         /> */}
         <LetsDo />
-        <About />
+        {/* <About /> */}
       </div>
       <div className="bg-black min-h-screen w-full text-white overflow-hidden px-[0.5rem]">
         <Footer />

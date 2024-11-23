@@ -5,7 +5,7 @@ import ContactMe from '../About/ContactMe'
 
 function Showcase() {
   return (
-    <div className='min-h-screen py-20 my-5 w-full bg-neutral-950 px-20 rounded-2xl capitalize'>
+    <div className='min-h-screen py-10 my-5 w-full bg-neutral-950 px-20 rounded-2xl capitalize'>
         <div className='font-Poppins '>
         <h1 className="text-[5rem] capitalize font-semibold pb-10">featured project</h1>
         <p className='text-xs font-Orbitron font-light tracking-[0.2rem]'>I love to create websites</p>
