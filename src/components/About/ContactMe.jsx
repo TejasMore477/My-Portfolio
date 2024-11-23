@@ -1,10 +1,9 @@
 import React from 'react'
 
-function ContactMe({paddingY = 10}) {
-      const Contact = "< Contact Me >"
+function ContactMe({paddingY = 10, text = "< Contact Me >", textPosition = "end" , width="full"}) {
   return (
-    <div className='w-full text-end'>
-        <button className={`font-Poppins text-sm py-${paddingY} text-end text-redO`}>{Contact}</button>
+    <div className={`w-${width} text-${textPosition}`}>
+        <button className={`font-Poppins text-sm py-${paddingY} text-end text-redO`}>{text}</button>
     </div>
   )
 }

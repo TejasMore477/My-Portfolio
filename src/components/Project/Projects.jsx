@@ -8,7 +8,7 @@ function Projects(handelMenu, showMenu, setShowMenu) {
   return (
     <div className="">
       <div className="w-full py-24 px-[4.5rem] font-Poppins font-semibold">
-        <h1 className="text-[5rem]">Featured Projects </h1>
+        <h1 className="text-[5rem]">Projects</h1>
         <Border />
         <div className="text-start pt-5">
           <h2 className="font-Poppins text-xl leading-none font-light pb-4">

@@ -10,7 +10,7 @@ import About from "./components/About/About";
 import Footer from "./components/footer/Footer";
 import PlayReel from "./components/reel/PlayReel";
 import Projects from "./components/Project/Projects";
-import ProjectContainer from "./components/ProjectShowcase/ProjectContainer";
+import Showcase from "./components/ProjectShowcase/Showcase";
 
 function Mother({ loaderAnime }) {
   const [showMenu, setShowMenu] = useState(false);
@@ -45,10 +45,10 @@ function Mother({ loaderAnime }) {
         />
         <Landing loaderAnime={loaderAnime} />
         <PlayReel />
+        <Showcase/>
         <Projects  handelMenu={handelMenu} showMenu={showMenu}
           setShowMenu={setShowMenu}
          />
-        <ProjectContainer />
         <LetsDo />
         <About />
       </div>
