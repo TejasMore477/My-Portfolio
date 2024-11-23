@@ -14,9 +14,9 @@ function Footer() {
             <LinksComp />
           </div>
           <Border />
-          <p className="text-sm tracking-wider font-thin text-redO text-right mt-4">
-            Wanna Play some Cool games ? <br /> try turning off your internate
-            connection while surfing through my site!
+          <p className="text-sm tracking-wider font-thin text-redO text-right mt-4 capitalize">
+            Wanna Play a Cool game ? <br /> try turning off your internate
+            connection while surfing through my site !
           </p>
         </div>
         <div className="flex items-center justify-between w-full">
