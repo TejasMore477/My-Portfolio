@@ -25,7 +25,7 @@ function Mother({ loaderAnime }) {
       el: scrollRef.current,
       smooth: true,
       lerp: 0.1, // Adjust smoothness (closer to 0 = smoother)
-      multiplier: 10, // Adjust scroll speed
+      multiplier: 5, // Adjust scroll speed
     });
 
     // Cleanup on component unmount
@@ -46,11 +46,11 @@ function Mother({ loaderAnime }) {
         <Landing loaderAnime={loaderAnime} />
         <PlayReel />
         <Showcase/>
-        <Projects  handelMenu={handelMenu} showMenu={showMenu}
+        {/* <Projects  handelMenu={handelMenu} showMenu={showMenu}
           setShowMenu={setShowMenu}
-         />
+         /> */}
         <LetsDo />
-        <About />
+        {/* <About /> */}
       </div>
       <div className="bg-black min-h-screen w-full text-white overflow-hidden px-[0.5rem]">
         <Footer />
