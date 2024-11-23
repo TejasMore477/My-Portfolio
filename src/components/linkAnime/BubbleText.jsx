@@ -1,12 +1,8 @@
 import React from "react";
 
-function Menu({ handelMenu, text = "Menu" }) {
+function BubbleText({ text }) {
   return (
-    <button
-      onClick={handelMenu}
-      type="button"
-      className="text-xs font-Poppins text-neutral-300"
-    >
+    <a className="text-center font-Poppins text-sm font-extralight text-neutral-300">
       {text.split("").map((char, idx) => (
         <span
           key={idx}
@@ -23,8 +19,8 @@ function Menu({ handelMenu, text = "Menu" }) {
           </span>
         </span>
       ))}
-    </button>
+    </a>
   );
 }
 
-export default Menu;
+export default BubbleText;
