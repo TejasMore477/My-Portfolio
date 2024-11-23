@@ -1,4 +1,5 @@
 import React from "react";
+import FlipLinks from "../linkAnime/FlipLinks";
 
 function RightCompo({ footer = false }) {
   const elements = ["home", "Projects", "About", "Resume"];
@@ -11,13 +12,7 @@ function RightCompo({ footer = false }) {
   return (
     <div className="w-full flex flex-col items-end py-10 gap-2">
       {displayElements.map((item, index) => (
-        <button
-          key={index}
-          type="button"
-          className="text-[3.5rem] uppercase font-Poppins leading-none tracking-tight font-semibold"
-        >
-          {item}
-        </button>
+        <FlipLinks key={index} href={"/"}>{item}</FlipLinks>
       ))}
     </div>
   );
