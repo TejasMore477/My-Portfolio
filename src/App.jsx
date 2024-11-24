@@ -3,7 +3,6 @@ import Mother from "./Mother";
 import Cursor from "./components/Cursor/Cursor";
 import Loader from "./components/loaderPage/Loader";
 import CatchTheBallGame from "./components/OfflineGame/CatchTheBall";
-import PageNotFound from "./components/pagenotfund/PageNotFound";
 
 function App() {
   const [mousePosition, setMousePosition] = useState({
@@ -61,8 +60,6 @@ function App() {
           <CatchTheBallGame />
         </div>
       )}
-
-      {/* <PageNotFound/> */}
       
     </div>
   );

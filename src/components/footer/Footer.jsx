@@ -9,19 +9,47 @@ function Footer() {
   return (
     <div className="w-full h-screen pt-8 bg-neutral-950">
       <div className="w-full h-full flex flex-col justify-between pt-10 items-start px-[4.5rem] rounded-t-2xl bg-black">
+        
         <div className="w-full flex flex-col items-end justify-between -slate-900">
           <RightCompo footer={true} />
           <div className="w-1/2 mb-8">
             <LinksComp />
           </div>
           <Border />
-          <p className="text-sm tracking-wider font-thin text-redO text-right mt-4 capitalize">
-            Wanna Play a Cool game ? <br /> try turning off your internate
-            connection while surfing through my site!
-          </p>
+
+          <div className="h-8 overflow-hidden">
+
+            <motion.p
+              initial={{ opacity: 0, y: "100%" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false }}
+              transition={{ delay: 1.3, duration: 0.8 }}
+              className="text-sm tracking-wider font-thin text-redO text-right mt-4 capitalize leading-none"
+            >
+              Wanna Play a Cool game ?
+            </motion.p>
+
+          </div>
+
+          <div className="h-8 overflow-hidden">
+
+            <motion.p
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false }}
+              transition={{ delay: 1.3, duration: 0.8 }}
+              className="text-sm tracking-wider font-thin text-redO text-right mt-1 capitalize leading-none"
+            >
+              try turning off your internate connection while surfing through my
+              site!
+            </motion.p>
+
+          </div>
+
         </div>
 
         <div className="BottomText flex items-center justify-between w-full">
+
           <div className="overflow-hidden h-[35vh]">
             <motion.h1
               initial={{ y: "80%" }}
@@ -34,9 +62,8 @@ function Footer() {
             </motion.h1>
           </div>
 
-          {/* Circle Animation */}
           <motion.a
-          href="/"
+            href="/"
             className="size-[13rem] rounded-full bg-redO grid place-content-center group hover:bg-black hover:border-[1px] hover:border-redO hover:transition hover:ease-in-out hover:duration-700"
             initial={{ scale: 0, rotate: 45 }}
             whileInView={{ scale: 1, rotate: -45 }}
@@ -48,6 +75,7 @@ function Footer() {
             </span>
           </motion.a>
         </div>
+
       </div>
     </div>
   );

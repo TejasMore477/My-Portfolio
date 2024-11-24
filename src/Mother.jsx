@@ -11,6 +11,7 @@ import Footer from "./components/footer/Footer";
 import PlayReel from "./components/reel/PlayReel";
 import Projects from "./components/Project/Projects";
 import Showcase from "./components/ProjectShowcase/Showcase";
+import PageNotFound from "./components/pagenotfund/PageNotFound";
 
 function Mother({ loaderAnime }) {
   const [showMenu, setShowMenu] = useState(false);
@@ -44,12 +45,13 @@ function Mother({ loaderAnime }) {
           handelMenu={handelMenu}
         />
         <Landing loaderAnime={loaderAnime} />
-        <PlayReel />
-        <Showcase/>
+        {/* <PlayReel /> */}
+        {/* <Showcase/> */}
         {/* <Projects  handelMenu={handelMenu} showMenu={showMenu}
           setShowMenu={setShowMenu}
          /> */}
-        <LetsDo />
+        {/* <LetsDo /> */}
+        {/* <PageNotFound/> */}
         {/* <About /> */}
       </div>
       <div className="bg-black min-h-screen w-full text-white overflow-hidden px-[0.5rem]">
