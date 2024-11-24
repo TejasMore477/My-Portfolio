@@ -14,19 +14,6 @@
     cursor:none;
 }
 
-html, body {
-    height: 100%;
-    overflow: hidden; /* Prevent default scrolling */
-  }
-  
-  [data-scroll-container] {
-    overflow: hidden; /* Required for LocomotiveScroll */
-  }
-  
-  [data-scroll-section] {
-    position: relative;
-  }
-  
 
 a,button{
     cursor: none;

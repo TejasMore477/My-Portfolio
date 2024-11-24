@@ -1,17 +1,43 @@
 import React from "react";
 import ContactMe from "./ContactMe";
 import LocalTime from "../dateTime/LocalTime";
+import { Tilt } from "@jdion/tilt-react";
+import { motion } from "framer-motion";
 
 function About() {
   return (
-    <div className="w-full h-screen bg-neutral-950 px-20 py-16 grid place-content-center rounded-b-xl">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5, delay: 1 }}
+      className="w-full h-screen bg-neutral-950 px-20 py-16 grid place-content-center rounded-b-xl"
+    >
       <div className="w-full h-full flex items-center justify-center gap-5">
-        <div className="w-1/4 bg-zinc-800 bg-opacity-10 backdrop-blur-sm rounded-lg z-20 flex items-center gap-5 px-10 flex-col py-10">
-          <img
-            className="size-64 object-cover object-top rounded-md"
-            src="src/assets/images/profile/andres-hernandez-nlNR4zy7g_I-unsplash.jpg"
-            alt=""
-          />
+        <motion.div 
+        className="w-1/4 bg-zinc-800 bg-opacity-10 backdrop-blur-sm rounded-lg z-20 flex items-center gap-5 px-10 flex-col py-10"
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8 , delay:0.4}}
+        >
+
+          <Tilt className="h-72 w-72 grid place-content-center overflow-hidden relative">
+            <img
+              className="opacity-20 scale-[1] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-64 w-64 object-cover object-top rounded-md"
+              src="src/assets/images/profile/andres-hernandez-nlNR4zy7g_I-unsplash.jpg"
+              alt=""
+            />
+            <img
+              className="opacity-60 scale-[0.96] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-64 w-64 object-cover object-top rounded-md"
+              src="src/assets/images/profile/andres-hernandez-nlNR4zy7g_I-unsplash.jpg"
+              alt=""
+            />
+            <img
+              className="opacity-80 scale-[0.85] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-64 w-64 object-cover object-top rounded-md"
+              src="src/assets/images/profile/andres-hernandez-nlNR4zy7g_I-unsplash.jpg"
+              alt=""
+            />
+          </Tilt>
+
           <div>
             <h2 className="font-poppins">
               Blood@ <span className="text-redO">A+</span>
@@ -21,7 +47,8 @@ function About() {
             </h2>
             <LocalTime pos={"start"} />
           </div>
-        </div>
+        </motion.div>
+
         <div className="w-2/3 h-full relative px-3 py-5">
           <h3 className="w-full font-Poppins text-[1.3rem] leading-[1.4rem] font-light py-10">
             I am <a className="text-redO font-Poppins">Tejas Madhukar More</a>,
@@ -29,17 +56,20 @@ function About() {
             India. I love building interactive websites that blend design and
             functionality seamlessly.
           </h3>
+
           <div className="flex items-start justify-between gap-5">
             <h3 className="w-1/2 font-Poppins text-[1rem]  leading-[1.2rem] font-extralight py-4">
               I’m still early in my journey and haven’t had the chance to work
               with many companies yet, but I’m really excited to find
               opportunities where my creativity and skills are appreciated.
             </h3>
+
             <h3 className="w-1/2 font-Poppins text-[1rem]  leading-[1.2rem] font-extralight py-4">
               I’m always learning and growing, and I’d love to work with a team
               that values my work and helps me grow along the way.
             </h3>
           </div>
+
           <p className="w-full font-Poppins text-[1.3rem] leading-[1.4rem] font-light py-10">
             I've been interested in design and creativity since I was young.
             What started as a hobby, learning from YouTube, soon became a real
@@ -54,10 +84,11 @@ function About() {
             Every project I work on is a chance to blend creativity with
             practical solutions.
           </p>
+
           <ContactMe paddingY={0} />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

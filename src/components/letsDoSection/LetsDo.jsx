@@ -27,7 +27,7 @@ function LetsDo() {
       </div>
 
       <div className="h-[50vh] w-[75%] flex items-center justify-end relative gap-20">
-        <Tilt className="w-[19rem] h-full bg-zinc-800 bg-opacity-10 backdrop-blur-sm rounded-lg flex items-center justify-center i relative -top-10 left-10">
+        <Tilt className="w-[19rem] h-full bg-zinc-800 bg-opacity-10 backdrop-blur-sm rounded-lg flex items-center justify-center relative -top-10 left-10">
             <img
               src="src/assets/images/profile/lance-reis-TTdJV-K1IUg-unsplash.jpg"
               alt="My Image"
