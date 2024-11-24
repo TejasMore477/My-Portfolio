@@ -15,7 +15,7 @@ function Projects() {
             viewport={{ once: false }}
             animate={{ opacity: 1, y: 0 }}
             // whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.3, delay: 0.3, ease: [0.5, 1, 0.89, 1] }}
+            transition={{ duration: 1.3, delay: 1.3, ease: [0.5, 1, 0.89, 1] }}
             className="text-[5rem]"
           >
             Projects
