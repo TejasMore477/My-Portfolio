@@ -12,7 +12,6 @@ import PlayReel from "./components/reel/PlayReel";
 import Projects from "./components/Project/Projects";
 import Showcase from "./components/ProjectShowcase/Showcase";
 import PageNotFound from "./components/pagenotfund/PageNotFound";
-import Texto from "./components/About/Texto";
 
 function Mother({ loaderAnime }) {
   const [showMenu, setShowMenu] = useState(false);
