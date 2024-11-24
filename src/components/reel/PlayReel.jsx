@@ -17,7 +17,6 @@ function PlayReel() {
     offset: ["start end", "end start"],
   });
 
-  // Animations based on scroll
   const playX = useTransform(scrollYProgress, [0, 1], ["0%", "-550%"]);
   const reelX = useTransform(scrollYProgress, [0, 1], ["0%", "550%"]);
 
@@ -75,7 +74,7 @@ function PlayReel() {
     };
   }, [playX, reelX]);
 
-  // Add click event for playing video with sound
+  // click event for playing video 
   useEffect(() => {
     const handleReelClick = () => {
       if (vid.current) {
@@ -90,7 +89,7 @@ function PlayReel() {
     };
 
     const reelElement = parentRef.current;
-    // console.log(reelElement)
+
     if (reelElement) {
       reelElement.addEventListener("click", handleReelClick);
     }
@@ -109,7 +108,8 @@ function PlayReel() {
       style={{ position: "relative", overflow: "hidden" }}
     >
       <div className="w-full relative h-[10rem] sm:h-[90vh] flex items-center justify-between top-0">
-        <div
+        <button
+        type="button"
           ref={videoRef}
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden h-[0vh] w-[0vw]"
         >
@@ -121,7 +121,7 @@ function PlayReel() {
             className="w-full h-full scale-[1.6]"
             src={playreel}
           ></video>
-        </div>
+        </button>
         <div className="flex items-center justify-center w-full gap-5">
           <h1
             ref={play}
@@ -137,7 +137,7 @@ function PlayReel() {
           </h1>
         </div>
       </div>
-      <p className="text-center sm:text-lg px-5 z-[999]">
+      <p className="text-center text-sm font-Poppins font-light px-5 z-[999]">
         MY work is best experienced in motion. Don’t forget to put on your
         headphones.
       </p>
