@@ -6,9 +6,14 @@ import LinksComp from "../menupage/LinksComp";
 import Border from "../heroSection/Border";
 
 function Footer() {
+  const goToTop = ()=>{
+    window.scrollTo({
+      top:0,
+      behavior:"smooth",
+    });
+  }
   return (
-    <div className="w-full h-screen pt-8 bg-neutral-950">
-      <div className="w-full h-full flex flex-col justify-between pt-10 items-start px-[4.5rem] rounded-t-2xl bg-black">
+      <div className="w-full h-screen flex flex-col justify-between pt-10 items-start px-[4.5rem] rounded-t-2xl bg-neutral-950">
         
         <div className="w-full flex flex-col items-end justify-between -slate-900">
           <RightCompo footer={true} />
@@ -62,8 +67,9 @@ function Footer() {
             </motion.h1>
           </div>
 
-          <motion.a
-            href="/"
+          <motion.button
+          type="button"
+          onClick={goToTop}
             className="size-[13rem] rounded-full bg-redO grid place-content-center group hover:bg-black hover:border-[1px] hover:border-redO hover:transition hover:ease-in-out hover:duration-700"
             initial={{ scale: 0, rotate: 45 }}
             whileInView={{ scale: 1, rotate: -45 }}
@@ -73,11 +79,10 @@ function Footer() {
             <span className="font-bold text-[6rem]">
               <BsArrowUpRight />
             </span>
-          </motion.a>
+          </motion.button>
         </div>
 
       </div>
-    </div>
   );
 }
 

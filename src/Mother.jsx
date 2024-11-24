@@ -45,14 +45,12 @@ function Mother({ loaderAnime }) {
           handelMenu={handelMenu}
         />
         <Landing loaderAnime={loaderAnime} />
-        {/* <PlayReel /> */}
-        {/* <Showcase/> */}
-        <Projects/>
-        {/* <LetsDo /> */}
+        <PlayReel />
+        <Showcase/>
+        {/* <Projects/> */}
+        <LetsDo />
         {/* <PageNotFound/> */}
         {/* <About /> */}
-      </div>
-      <div className="bg-black min-h-screen w-full text-white overflow-hidden px-[0.5rem]">
         <Footer />
       </div>
     </div>
