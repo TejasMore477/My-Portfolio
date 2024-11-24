@@ -47,19 +47,14 @@ function Mother({ loaderAnime }) {
         <Landing loaderAnime={loaderAnime} />
         {/* <PlayReel /> */}
         {/* <Showcase/> */}
-        {/* <Projects  handelMenu={handelMenu} showMenu={showMenu}
-          setShowMenu={setShowMenu}
-         /> */}
+        <Projects/>
         {/* <LetsDo /> */}
         {/* <PageNotFound/> */}
-        <About />
-        {/* <div className="bg-black h-screen w-full grid place-content-center">
-        <Texto text={"Tejas Madhukar More</a>,a 3rd-year student and a creative web developer from Maharashtra,India. I love building interactive websites that blend design andfunctionality seamlessly."}/>  
-        </div> */}
+        {/* <About /> */}
       </div>
-      {/* <div className="bg-black min-h-screen w-full text-white overflow-hidden px-[0.5rem]">
+      <div className="bg-black min-h-screen w-full text-white overflow-hidden px-[0.5rem]">
         <Footer />
-      </div> */}
+      </div>
     </div>
 
   );
