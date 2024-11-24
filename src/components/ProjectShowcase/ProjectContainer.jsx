@@ -64,6 +64,7 @@ function ProjectContainer() {
               index % 2 !== 0 && "sm:h-[35rem] sm:w-[25rem]"
             } mt-10 sm:mt-0 relative overflow-hidden`}
           >
+
             <motion.img
               data-scroll
               data-scroll-speed="-0.2"
@@ -81,17 +82,35 @@ function ProjectContainer() {
               className="h-full w-full scale-[1.1]"
               src={item.video}
             ></video>
+            
           </a>
 
           <div className="mt-3">
-            <h3 className="text-sm sm:text-xl font-bold sm:font-medium capitalize">
-              <span className="inline-block origin-left">{item.heading}</span>
+
+            <h3 className="text-sm sm:text-xl overflow-hidden font-bold sm:font-medium capitalize">
+              <motion.span
+                initial={{ opacity: 0, y: "100%" }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3, duration: 0.8 }}
+                className="inline-block origin-left"
+              >
+                {item.heading}
+              </motion.span>
             </h3>
-            <h3 className="text-sm sm:text-lg sm:font-light text-zinc-500 capitalize">
-              <span className="inline-block origin-left">
+
+            <h3 className="text-sm sm:text-lg overflow-hidden sm:font-light text-zinc-500 capitalize">
+              <motion.span
+                initial={{ opacity: 0, x: "-100%" }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.5, duration: 0.8 }}
+                className="inline-block origin-left"
+              >
                 {item.subHeading}
-              </span>
+              </motion.span>
             </h3>
+
           </div>
         </div>
       ))}
