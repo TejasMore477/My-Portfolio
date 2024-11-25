@@ -1,60 +1,72 @@
-import React, { useEffect, useRef, useState } from "react";
-import LocomotiveScroll from "locomotive-scroll";
-import "locomotive-scroll/dist/locomotive-scroll.css";
+import React, { useState } from "react";
+import { Outlet, Route, Routes } from "react-router-dom";
 
 import Navbar from "./components/navbar/Navbar";
 import MenuPage from "./components/menupage/MenuPage";
+import Footer from "./components/footer/Footer";
 import Landing from "./components/heroSection/Landing";
 import LetsDo from "./components/letsDoSection/LetsDo";
 import About from "./components/About/About";
-import Footer from "./components/footer/Footer";
 import PlayReel from "./components/reel/PlayReel";
 import Projects from "./components/Project/Projects";
 import Showcase from "./components/ProjectShowcase/Showcase";
-import PageNotFound from "./components/pagenotfund/PageNotFound";
+import PageNotFound from "./components/pagenotfund/PageNotFound"; 
+import Home from "./components/home/Home";
+
+// Layout component wraps the common Navbar, Menu, and Footer
+function Layout({ showMenu, setShowMenu, handelMenu }) {
+  return (
+    <>
+      <Navbar handelMenu={handelMenu} />
+      <MenuPage
+        showMenu={showMenu}
+        setShowMenu={setShowMenu}
+        handelMenu={handelMenu}
+      />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </>
+  );
+}
 
 function Mother({ loaderAnime }) {
   const [showMenu, setShowMenu] = useState(false);
+
   const handelMenu = () => {
     setShowMenu((prev) => !prev);
   };
 
-  const scrollRef = useRef(null);
-
-  useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: scrollRef.current,
-      smooth: true,
-      lerp: 0.1, // Adjust smoothness (closer to 0 = smoother)
-      multiplier: 5, // Adjust scroll speed
-    });
-
-    // Cleanup on component unmount
-    return () => {
-      scroll.destroy();
-    };
-  }, []);
-
   return (
-    <div className="relative h-fit " ref={scrollRef} data-scroll-container>
+    <div className="relative h-fit" data-scroll-container>
       <div className="bg-black min-h-screen w-full text-white overflow-hidden px-[0.5rem]">
-        <Navbar handelMenu={handelMenu} />
-        <MenuPage
-          showMenu={showMenu}
-          setShowMenu={setShowMenu}
-          handelMenu={handelMenu}
-        />
-        <Landing loaderAnime={loaderAnime} />
-        <PlayReel />
-        <Showcase/>
-        {/* <Projects/> */}
-        <LetsDo />
-        {/* <PageNotFound/> */}
-        {/* <About /> */}
-        <Footer />
+        <Routes>
+          {/* Main Layout Route */}
+          <Route
+            element={
+              <Layout
+                showMenu={showMenu}
+                setShowMenu={setShowMenu}
+                handelMenu={handelMenu}
+              />
+            }
+          >
+            {/* Home Route */}
+            <Route path="/" element={<Home loaderAnime={loaderAnime} />} />
+
+            {/* Projects Route */}
+            <Route path="/projects" element={<Projects />} />
+
+            {/* About Route */}
+            <Route path="/about" element={<About />} />
+          </Route>
+
+          {/* Wildcard Route for Page Not Found */}
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
       </div>
     </div>
-
   );
 }
 

@@ -7,7 +7,10 @@ import { motion } from "framer-motion";
 
 function Projects() {
   return (
-    <div className="">
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.9, delay: 0.2 }} >
       <div className="w-full py-24 px-[4.5rem] font-Poppins font-semibold">
         <div className="h-32 flex items-center overflow-hidden">
           <motion.h1
@@ -82,7 +85,7 @@ function Projects() {
           descriptionData={project}
         />
       ))}
-    </div>
+    </motion.div>
   );
 }
 

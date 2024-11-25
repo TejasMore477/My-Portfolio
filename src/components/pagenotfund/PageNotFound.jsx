@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function PageNotFound() {
   return (
     <div className="w-full h-screen text-white bg-black overflow-hidden font-Poppins flex flex-col items-center justify-center">
-
       <motion.p
         className="text-redO text-xs font-Orbitron leading-none tracking-[1rem] pl-8"
         initial={{ opacity: 0, y: -50 }}
@@ -47,21 +47,24 @@ function PageNotFound() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1, duration: 0.8 }}
       >
-        <motion.a
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 300 }}
-          className="text-redO text-sm capitalize"
-        >
-          {'< Home >'}
-        </motion.a>
-        
-        <motion.a
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 300 }}
-          className="text-redO text-sm capitalize"
-        >
-          {'< Projects >'}
-        </motion.a>
+        <Link to={"/"} className="text-redO text-sm capitalize">
+          <motion.span
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            {"< Home >"}
+          </motion.span>
+        </Link>
+
+        <Link to={"/projects"} className="text-redO text-sm capitalize">
+          {" "}
+          <motion.span
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            {"< Projects >"}
+          </motion.span>
+        </Link>
       </motion.div>
     </div>
   );

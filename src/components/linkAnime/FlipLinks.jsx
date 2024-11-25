@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion";
+import { NavLink } from 'react-router-dom';
 
 const DURATION = 0.25;
 const STAGGER = 0.025;
@@ -7,11 +8,12 @@ const STAGGER = 0.025;
 
 const FlipLinks = ({ children, href }) => {
     return (
-      <motion.a
+      <NavLink to={href}>
+              <motion.span
+      // ${isActive && "text-redO"}
         initial="initial"
         whileHover="hovered"
-        href={href}
-        className="relative block overflow-hidden whitespace-nowrap text-[3.5rem] uppercase font-Poppins leading-none tracking-tight font-semibold"
+        className={`relative block overflow-hidden whitespace-nowrap text-[3.5rem] uppercase font-Poppins leading-none tracking-tight font-semibold`}
         style={{
           lineHeight: 0.75,
         }}
@@ -62,7 +64,8 @@ const FlipLinks = ({ children, href }) => {
             </motion.span>
           ))}
         </div>
-      </motion.a>
+      </motion.span>
+      </NavLink>
     );
   };
 

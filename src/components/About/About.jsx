@@ -9,7 +9,7 @@ function About() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1.5, delay: 1 }}
+      transition={{ duration: 0.9, delay: 0.2 }} 
       className="w-full h-screen bg-neutral-950 px-20 py-16 grid place-content-center rounded-b-xl"
     >
       <div className="w-full h-full flex items-center justify-center gap-5">
@@ -17,7 +17,7 @@ function About() {
         className="w-1/4 bg-zinc-800 bg-opacity-10 backdrop-blur-sm rounded-lg z-20 flex items-center gap-5 px-10 flex-col py-10"
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.8 , delay:0.4}}
+        transition={{ duration: 0.8 , delay:0.3}}
         >
 
           <Tilt className="h-72 w-72 grid place-content-center overflow-hidden relative">

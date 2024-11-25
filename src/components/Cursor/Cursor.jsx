@@ -50,7 +50,7 @@ function Cursor({ mousePosition, setMousePosition }) {
     const handleMouseLeave = () => setCursorVariant("default");
 
     // Elements triggering the hover effect
-    const interactiveElements = document.querySelectorAll("a, button, Link");
+    const interactiveElements = document.querySelectorAll("a, button, Link , NavLink");
     interactiveElements.forEach((el) => {
       el.addEventListener("mouseover", handleMouseOver);
       el.addEventListener("mouseleave", handleMouseLeave);
