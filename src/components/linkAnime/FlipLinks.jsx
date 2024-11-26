@@ -8,12 +8,13 @@ const STAGGER = 0.025;
 
 const FlipLinks = ({ children, href }) => {
     return (
-      <NavLink to={href}>
+      <NavLink to={href}         
+      className={(e) =>
+        `${e.isActive ? "text-redO" : "text-white"} relative block overflow-hidden whitespace-nowrap text-[3.5rem] uppercase font-Poppins leading-none tracking-tight font-semibold transition ease-in-out duration-150`
+      }>
               <motion.span
-      // ${isActive && "text-redO"}
         initial="initial"
         whileHover="hovered"
-        className={`relative block overflow-hidden whitespace-nowrap text-[3.5rem] uppercase font-Poppins leading-none tracking-tight font-semibold`}
         style={{
           lineHeight: 0.75,
         }}
