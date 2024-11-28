@@ -48,19 +48,19 @@ function CatchTheBallGame({ onlineStatus }) {
       initial={{ y: 0, opacity: 1 }}
       animate={isOnline && { y: "200%" }}
       transition={{ duration: 1, delay: 4, ease: easeInOut }}
-      className="xl:bg-green-900 lg:bg-cyan-800 md:bg-emerald-900 sm:bg-fuchsia-800 h-screen max-w-full overflow-hidden relative flex flex-col items-center justify-center text-white bg-black text-center"
+      className="h-screen max-w-full overflow-hidden relative flex flex-col items-center justify-center text-white bg-black text-center"
     >
       <div className="w-full fixed text-center top-[20%] flex items-center flex-col ">
         <div className="text-center overflow-hidden">
-          <motion.h1 className="sm:text-[3rem] text-[8vw] mb-4 font-Poppins leading-none tracking-tight">
+          <motion.h1 className="lg:text-[3rem] md:text-[5.5vw] text-[8vw] mb-4 font-Poppins leading-none tracking-tight">
             Catch the Ball
           </motion.h1>
         </div>
-        <p className="mb-2 sm:text-xl text-md">
+        <p className="mb-2 lg:text-xl text-md">
           Time Left:{" "}
           <span className="text-redO font-Orbitron">{timeLeft}s</span>
         </p>
-        <p className="mb-8 sm:text-xl text-md">
+        <p className="mb-8 lg:text-xl text-md">
           Score: <span className="text-redO font-Orbitron">{score}</span>
         </p>
       </div>
@@ -68,14 +68,14 @@ function CatchTheBallGame({ onlineStatus }) {
       {gameOver ? (
         <div className="text-center mt-10">
           <motion.h2
-            className="text-redO mt-5 sm:text-[6rem] text-[14vw] leading-none tracking-tight mb-4 font-Poppins font-semibold "
+            className="text-redO mt-5 lg:text-[6rem] md:text-[11vw] text-[14vw] leading-none tracking-tight mb-4 font-Poppins font-semibold "
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.5, delay: 0 }}
           >
             Game Over!
           </motion.h2>
-          <p className="sm:text-xl text-md mb-4 ">
+          <p className="lg:text-xl text-md mb-4 ">
             Final Score:{" "}
             <span className="text-redO font-Orbitron">{score}</span>
           </p>
@@ -112,11 +112,11 @@ function CatchTheBallGame({ onlineStatus }) {
           whileTap={{ scale: 0 }} // Catching effect
         />
       )}
-
+{/* className="lg:mt-8 mt-16 lg:text-md lg:top-[45%] lg:left-[41.5%] lg:-translate-x-0 lg:-translate-y-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xs font-Poppins font-extralight fixed" */}
       {!gameOver && (
-        <p className="sm:mt-8 mt-16 sm:text-sm sm:top-[45%] sm:left-[41.5%] sm:-translate-x-0 sm:-translate-y-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xs font-Poppins font-extralight fixed">
+        <p className="lg:mt-8 bg-fuchsia-00 mt-16 lg:text-md lg:top-[46%] xl:left-[56.5%] xl:-translate-x-[56.5%] lg:left-[58%] lg:-translate-x-[58%] lg:-translate-y-[46%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xs font-Poppins font-extralight fixed">
           Click the Ball{" "}
-          <span className="sm:pl-20">to catch it and increase your score!</span>
+          <span className="xl:pl-[5rem] lg:pl-[5rem]">to catch it and increase your score!</span>
         </p>
       )}
     </motion.div>

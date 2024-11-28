@@ -58,7 +58,7 @@ function Loader({ setLoaderAnime, loaderAnime }) {
         <h2 className="lg:text-4xl text-3xl md:text-[2.9vw] sm:text-[5vw] sm:pl-[17vw] md:pl-[1vw] font-light px-4  sm:leading-none mt-7 md:mt-0">
           Web
           <motion.div
-            className="inline-block ml-3 w-[12rem]"
+            className="inline-block -fuchsia-400 ml-3 sm:w-[12rem]"
             initial="hidden"
             animate="visible"
             exit="exit"

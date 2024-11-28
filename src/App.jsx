@@ -11,7 +11,7 @@ function App() {
   });
 
   const [loaderAnime, setLoaderAnime] = useState(false);
-  const [onlineStatus, setOnlineStatus] = useState(navigator.onLine);
+  const [onlineStatus, setOnlineStatus] = useState(false);//navigator.onLine
 
   // Track mouse position
   useEffect(() => {
