@@ -40,7 +40,7 @@ function Mother({ loaderAnime }) {
 
   return (
     <div className="relative h-fit" data-scroll-container>
-      <div className="bg-black min-h-screen w-full text-white overflow-hidden px-[0.5rem]">
+      <div className="bg-black min-h-screen w-full text-white overflow-hidden sm:px-[0.5rem]">
         <Routes>
           {/* Main Layout Route */}
           <Route

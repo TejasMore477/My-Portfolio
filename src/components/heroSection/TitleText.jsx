@@ -1,11 +1,11 @@
 import React from "react";
 import { easeInOut, motion } from "framer-motion";
-
+// 19rem
 function TitleText({ loaderAnime }) {
   return (
-    <div className="overflow-hidden h-[35vh]">
+    <div className="overflow-hidden xl:h-[35vh]">
       <motion.h1
-        className="font-Poppins text-[19rem] font-semibold leading-none tracking-[-2rem]"
+        className="font-Poppins xl:text-[20vw] sm:text-[21vw] text-[24.3vw] font-semibold leading-none -tracking-wider sm:tracking-[-2.5vw] xl:tracking-[-2rem]"
         initial={{ y: "100%" }}
         animate={loaderAnime && { y: 0 }}
         transition={{ duration: 1.2, ease: easeInOut, delay: 0.6 }}
