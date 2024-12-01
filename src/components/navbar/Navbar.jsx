@@ -4,7 +4,7 @@ import Menu from "./Menu";
 function Navbar({ handelMenu }) {
   return (
     <div className="h-20  w-full flex items-center justify-between xl:px-20 sm:px-5 px-4 fixed top-0 left-0 z-20">
-      <p className="sm:text-2xl text-[1.6rem] font-Poppins text-redO font-bold leading-none tracking-tighter">
+      <p className="sm:text-2xl text-[7vw] font-Poppins text-redO font-bold leading-none tracking-tighter">
         TMMORE
       </p>
       <Menu handelMenu={handelMenu} />

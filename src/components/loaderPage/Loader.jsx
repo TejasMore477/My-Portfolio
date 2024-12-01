@@ -33,14 +33,14 @@ function Loader({ setLoaderAnime, loaderAnime }) {
       <div className="md:flex items-center px-5 sm:px-0 w-full relative">
         <img className=" md:size-[4.5rem] lg:size-20 sm:size-[12vw] size-[16.5vw]" src={ganpatiBappa} alt="Shri Ganesha" />
 
-        <h2 className="lg:text-4xl md:w-auto w-[90%] md:text-[2.9vw] sm:text-[5vw] text-3xl font-light px-4 leading-none">
+        <h2 className="lg:text-4xl md:w-auto w-[90%] md:text-[2.9vw] sm:text-[5vw] text-[8vw] font-light px-4 leading-none">
           Tejas Madhukar More
         </h2>
 
         <motion.button
           type="button"
           onClick={() => setLoaderAnime((prev) => !prev)}
-          className="w-14 h-14 sm:w-12 sm:h-12 bottom-[2.2rem] left-[2rem] md:static absolute sm:ml-[10vw] ml-[6rem] md:ml-[0vw] border-solid border-[2px] border-redO rounded-full grid place-content-center"
+          className="w-[17vw] h-[17vw] sm:w-12 sm:h-12 bottom-[2.2rem] left-[4vw] md:static absolute sm:ml-[10vw] ml-[6rem] md:ml-[0vw] border-solid border-[2px] border-redO rounded-full grid place-content-center"
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 2, delay: 0.5 }}
@@ -55,7 +55,7 @@ function Loader({ setLoaderAnime, loaderAnime }) {
           </motion.span>
         </motion.button>
 
-        <h2 className="lg:text-4xl text-3xl md:text-[2.9vw] sm:text-[5vw] sm:pl-[17vw] md:pl-[1vw] font-light px-4  sm:leading-none mt-7 md:mt-0">
+        <h2 className="lg:text-4xl text-[8vw] md:text-[2.9vw] sm:text-[5vw] sm:pl-[17vw] md:pl-[1vw] font-light px-4  sm:leading-none mt-7 md:mt-0">
           Web
           <motion.div
             className="inline-block -fuchsia-400 ml-3 sm:w-[12rem]"
@@ -71,7 +71,7 @@ function Loader({ setLoaderAnime, loaderAnime }) {
         </h2>
 
         <div className="absolute bottom-[-10%] lg:right-5 right-10 md:right-[8vw]">
-          <p className="lg:text-xs md:text-[1.3vw] text-xs font-extralight tracking-wider leading-none">
+          <p className="lg:text-xs md:text-[1.3vw] text-[3.2vw] font-extralight tracking-wider leading-none">
             Click arrow to open
           </p>
         </div>

@@ -1,8 +1,12 @@
 import React from "react";
 
-function BubbleText({ text }) {
+function BubbleText({ text, link }) {
   return (
-    <a className="text-center font-Poppins text-sm font-extralight text-neutral-300">
+    <a
+      className="text-center font-Poppins sm:text-sm text-[3.4vw] sm:font-extralight text-neutral-300"
+      href={link}
+      target="blank"
+    >
       {text.split("").map((char, idx) => (
         <span
           key={idx}

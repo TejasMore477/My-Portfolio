@@ -3,7 +3,6 @@ import FlipLinks from "../linkAnime/FlipLinks";
 import Projects from "../Project/Projects";
 
 function RightCompo({ footer = false }) {
-  // const elements = ["home", "Projects", "About", "Resume"];
   const navLinks = [
     {navlink:"home",link:"/"},
     {navlink:"Project",link:"/projects"},
@@ -17,7 +16,7 @@ function RightCompo({ footer = false }) {
   const displayElements = footer ? filFunction() : navLinks;
 
   return (
-    <div className="w-full flex flex-col items-end py-10 gap-2">
+    <div className="w-full flex flex-col items-end py-[2.2rem] gap-2 ">
       {displayElements.map((item, index) => (
         <FlipLinks key={index} href={item.link}>{item.navlink}</FlipLinks>
       ))}

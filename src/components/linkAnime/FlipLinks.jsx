@@ -10,7 +10,7 @@ const FlipLinks = ({ children, href }) => {
     return (
       <NavLink to={href}         
       className={(e) =>
-        `${e.isActive ? "text-redO" : "text-white"} relative block overflow-hidden whitespace-nowrap text-[3.5rem] uppercase font-Poppins leading-none tracking-tight font-semibold transition ease-in-out duration-150`
+        `${e.isActive ? "text-redO" : "text-white"} relative block overflow-hidden whitespace-nowrap sm:text-[3.5rem] text-[12.5vw] uppercase font-Poppins leading-none tracking-tight font-semibold transition ease-in-out duration-150`
       }>
               <motion.span
         initial="initial"

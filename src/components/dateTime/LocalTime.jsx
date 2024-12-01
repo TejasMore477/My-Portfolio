@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 
 const LocalTime = ({ pos = "end" }) => {
   const [currentTime, setCurrentTime] = useState(new Date());
-  const [padd, setPadd] = useState("");
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -11,13 +10,6 @@ const LocalTime = ({ pos = "end" }) => {
 
     return () => clearInterval(timer);
   }, []);
-
-  useEffect(() => {
-    if (pos === "end") {
-      const paddingX = "px-[4.5rem]";
-      setPadd(paddingX);
-    }
-  }, [pos]);
 
   // Format time
   const timeOptions = {
@@ -40,19 +32,19 @@ const LocalTime = ({ pos = "end" }) => {
   const formattedDate = currentTime.toLocaleDateString("en-US", dateOptions);
 
   return (
-    <div className={`py-10 ${padd}`}>
+    <div className={`xl:py-10 pt-[8.5vh] xl:px-[4.5rem] px-5`}>
       <p
-        className={`text-${pos} font-Orbitron text-xs tracking-[0.2em] leading-none py-1`}
+        className={`text-${pos} font-Orbitron sm:text-xs text-[3vw] tracking-[0.2em] leading-none`}
       >
         tejasmore660@gmail.com
       </p>
       <p
-        className={`text-${pos} font-Orbitron text-xs tracking-[0.2em] leading-none py-1 text-redO`}
+        className={`text-${pos} font-Orbitron sm:text-xs text-[3vw] tracking-[0.2em] leading-none text-redO`}
       >
         Maharashtra, {formattedTime.toLowerCase()}
       </p>
       <p
-        className={`text-${pos} font-Orbitron text-xs tracking-[0.2em] leading-none py-1`}
+        className={`text-${pos} font-Orbitron sm:text-xs text-[3vw] tracking-[0.2em] leading-none`}
       >
         {formattedDate}
       </p>

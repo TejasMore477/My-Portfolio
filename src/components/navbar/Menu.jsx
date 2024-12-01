@@ -5,7 +5,7 @@ function Menu({ handelMenu, text = "Menu" }) {
     <button
       onClick={handelMenu}
       type="button"
-      className="sm:text-xs text-[0.7rem] font-Poppins text-neutral-300"
+      className="sm:text-xs text-[3.4vw] font-Poppins text-neutral-300"
     >
       {text.split("").map((char, idx) => (
         <span
