@@ -74,7 +74,7 @@ function PlayReel() {
     };
   }, [playX, reelX]);
 
-  // click event for playing video 
+  // click event for playing video
   useEffect(() => {
     const handleReelClick = () => {
       if (vid.current) {
@@ -104,12 +104,12 @@ function PlayReel() {
   return (
     <div
       ref={parentRef}
-      className="w-full min-h-screen sm:pb-10 flex flex-col items-center justify-between"
+      className="w-full min-h-screen xl:bg-red-950 lg:bg-fuchsia-950 md:bg-red-800 sm:bg-lime-600 bg-fuchsia-950 sm:pb-10 flex flex-col items-center sm:justify-between justify-center relative"
       style={{ position: "relative", overflow: "hidden" }}
     >
-      <div className="w-full relative h-[10rem] sm:h-[90vh] flex items-center justify-between top-0">
+      <div className="w-full relative h-[50vh] sm:h-[90vh] flex items-center justify-between top-0">
         <button
-        type="button"
+          type="button"
           ref={videoRef}
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden h-[0vh] w-[0vw]"
         >
@@ -122,22 +122,25 @@ function PlayReel() {
             src={playreel}
           ></video>
         </button>
-        <div className="flex items-center justify-center w-full gap-5">
+
+        <div className="flex items-center justify-center w-full sm:gap-5 gap-2">
           <h1
             ref={play}
-            className="text-redO text-[7rem] font-Orbitron font-semibold z-[999] leading-none tracking-tight "
+            className="text-redO sm:text-[7rem] text-[14vw] font-Orbitron font-semibold z-[999] leading-none tracking-tight "
           >
             Play
           </h1>
+
           <h1
             ref={reel}
-            className="text-redO text-[7rem] font-Orbitron font-semibold z-[999] leading-none tracking-tight "
+            className="text-redO sm:text-[7rem] text-[14vw] font-Orbitron font-semibold z-[999] leading-none tracking-tight "
           >
             Reel
           </h1>
         </div>
       </div>
-      <p className="text-center text-sm font-Poppins font-light px-5 z-[999]">
+
+      <p className="text-center sm:text-sm text-[3.5vw] font-Poppins font-light px-5 z-[999] sm:static absolute bottom-3">
         MY work is best experienced in motion. Don’t forget to put on your
         headphones.
       </p>
