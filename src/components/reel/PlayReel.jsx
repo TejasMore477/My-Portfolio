@@ -104,7 +104,7 @@ function PlayReel() {
   return (
     <div
       ref={parentRef}
-      className="w-full min-h-screen xl:bg-red-950 lg:bg-fuchsia-950 md:bg-red-800 sm:bg-lime-600 bg-fuchsia-950 sm:pb-10 flex flex-col items-center sm:justify-between justify-center relative"
+      className="w-full min-h-screen sm:pb-10 flex flex-col items-center sm:justify-between justify-center relative"
       style={{ position: "relative", overflow: "hidden" }}
     >
       <div className="w-full relative h-[50vh] sm:h-[90vh] flex items-center justify-between top-0">
