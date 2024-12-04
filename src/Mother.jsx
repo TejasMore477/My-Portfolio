@@ -26,7 +26,7 @@ function Layout({ showMenu, setShowMenu, handelMenu }) {
       <main>
         <Outlet />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

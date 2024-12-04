@@ -47,11 +47,11 @@ function ProjectContainer() {
   ];
 
   return (
-    <div className="sm:flex items-start justify-center flex-wrap gap-20 my-20">
+    <div className="sm:flex items-start justify-center flex-wrap gap-20 sm:my-20 my-5 bg-sky-9000">
       {data.map((item, index) => (
         <div
           key={index}
-          className={`w-full sm:w-fit mt-10 sm:mt-0 relative ${
+          className={`w-full sm:w-fit mt-0 sm:mt-0 relative bg-blue-9500 ${
             index % 2 !== 0 && "sm:pt-[20rem]"
           }`}
         >
@@ -60,9 +60,9 @@ function ProjectContainer() {
             target="blank"
             className={`bg-[${
               item.bgColor
-            }] block rounded-lg sm:w-[38rem] overflow-hidden w-full h-96 sm:h-[45rem] ${
-              index % 2 !== 0 && "sm:h-[35rem] sm:w-[25rem]"
-            } mt-10 sm:mt-0 relative overflow-hidden`}
+            }] block rounded-lg md:w-[38rem] overflow-hidden w-full h-[40vh] md:h-[45rem] ${
+              index % 2 !== 0 && "md:h-[35rem] md:w-[25rem] bg-red-500"
+            } mt-5 sm:mt-0 relative overflow-hidden bg-red-80`}
           >
 
             <motion.img
@@ -85,7 +85,7 @@ function ProjectContainer() {
             
           </a>
 
-          <div className="sm:mt-3 bg-red-600">
+          <div className="sm:mt-3">
 
             <h3 className="text-[5vw] sm:text-xl overflow-hidden font-bold sm:font-medium capitalize">
               <motion.span
