@@ -4,12 +4,8 @@ import { Outlet, Route, Routes } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import MenuPage from "./components/menupage/MenuPage";
 import Footer from "./components/footer/Footer";
-import Landing from "./components/heroSection/Landing";
-import LetsDo from "./components/letsDoSection/LetsDo";
 import About from "./components/About/About";
-import PlayReel from "./components/reel/PlayReel";
 import Projects from "./components/Project/Projects";
-import Showcase from "./components/ProjectShowcase/Showcase";
 import PageNotFound from "./components/pagenotfund/PageNotFound"; 
 import Home from "./components/home/Home";
 
@@ -26,7 +22,7 @@ function Layout({ showMenu, setShowMenu, handelMenu }) {
       <main>
         <Outlet />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

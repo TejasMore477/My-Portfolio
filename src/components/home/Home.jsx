@@ -8,9 +8,9 @@ function Home({ loaderAnime }) {
   return (
     <div>
       <Landing loaderAnime={loaderAnime} />
-      {/* <PlayReel /> */}
+      <PlayReel />
       <Showcase />
-      {/* <LetsDo /> */}
+      <LetsDo />
     </div>
   );
 }

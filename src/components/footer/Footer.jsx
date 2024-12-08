@@ -13,7 +13,7 @@ function Footer() {
     });
   }
   return (
-      <div className="w-full lg:h-screen md:h-[90vh] sm:h-[80vh] flex flex-col justify-between sm:pt-10 pt-5 items-start xl:px-[4.5rem] sm:px-[2vw] rounded-t-2xl bg-neutral-950">
+      <div className="w-full lg:h-screen md:h-[90vh] sm:h-[80vh] flex flex-col justify-between sm:pt-10 pt-5 items-start xl:px-[4.5rem] sm:px-[2vw] ">
         
         <div className="w-full flex flex-col items-end justify-between px-[1rem] sm:px-0">
           <RightCompo footer={true} />

@@ -87,7 +87,7 @@ function ProjectContainer() {
 
           <div className="sm:mt-3 my-2">
 
-            <h3 className="text-[4vw] sm:text-[2.9vw] md:text-[2.3vw] lg:text-xl leading-tight overflow-hidden font-bold sm:font-medium capitalize">
+            <h3 className="text-[5.2vw] sm:text-[2.9vw] md:text-[2.3vw] lg:text-xl leading-tight overflow-hidden font-bold sm:font-medium capitalize">
               <motion.span
                 initial={{ opacity: 0, y: "100%" }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -99,7 +99,7 @@ function ProjectContainer() {
               </motion.span>
             </h3>
 
-            <h3 className="text-[3.5vw] sm:text-[2.7vw] md:text-[2vw] lg:text-lg overflow-hidden sm:font-light text-zinc-500 capitalize">
+            <h3 className="sm:text-[2.7vw] md:text-[2vw] lg:text-lg overflow-hidden sm:font-light text-zinc-500 capitalize">
               <motion.span
                 initial={{ opacity: 0, x: "-100%" }}
                 whileInView={{ opacity: 1, x: 0 }}
