@@ -53,7 +53,7 @@ function LetsDo() {
             <motion.h2
               initial={{ opacity: 0, x: "-60%" }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               transition={{
                 duration: 1.6,
                 delay: 0.2,
@@ -70,7 +70,7 @@ function LetsDo() {
             <motion.h3
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               transition={{
                 duration: 1.3,
                 delay: 1.5,
@@ -86,7 +86,7 @@ function LetsDo() {
             <motion.h2
               initial={{ opacity: 0, x: "-60%" }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               transition={{
                 duration: 1.6,
                 delay: 0.2,

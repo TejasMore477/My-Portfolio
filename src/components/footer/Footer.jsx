@@ -27,7 +27,7 @@ function Footer() {
             <motion.p
               initial={{ opacity: 0, y: "100%" }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               transition={{ delay: 1.3, duration: 0.8 }}
               className="sm:text-sm text-[3.5vw] tracking-wider font-thin text-redO sm:text-right text-left mt-4 capitalize leading-none"
             >
@@ -41,7 +41,7 @@ function Footer() {
             <motion.p
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               transition={{ delay: 1.3, duration: 0.8 }}
               className="sm:text-sm text-[3.5vw] tracking-wider font-thin text-redO sm:text-right text-left mt-1 capitalize leading-none"
             >
