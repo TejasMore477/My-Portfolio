@@ -26,7 +26,7 @@ function ProjectContainer() {
       image: i2,
       video: v2,
       link: "https://tejasmore477.github.io/Minor-Project-5-Ochi-UI-React/",
-      bgColor: "#A3E635",
+      bgColor: "",
     },
     {
       heading: "AROCK",
@@ -34,7 +34,7 @@ function ProjectContainer() {
       image: i3,
       video: v3,
       link: "https://arock-portfolio.vercel.app/",
-      bgColor: "#161615",
+      bgColor: "",
     },
     {
       heading: "Refokus",
@@ -42,17 +42,17 @@ function ProjectContainer() {
       image: i4,
       video: v4,
       link: "https://refokus-ui-clone-reactjs.vercel.app/",
-      bgColor: "#253033",
+      bgColor: "",
     },
   ];
 
   return (
-    <div className="sm:flex items-start justify-center flex-wrap gap-20 my-20">
+    <div className="w-full sm:flex items-start justify-center flex-wrap gap-14 sm:my-20 mt-8 mb-5">
       {data.map((item, index) => (
         <div
           key={index}
-          className={`w-full sm:w-fit mt-10 sm:mt-0 relative ${
-            index % 2 !== 0 && "sm:pt-[20rem]"
+          className={`w-full sm:w-fit mt-0 relative bg-blue-9000 overflow-hidden ${
+            index % 2 !== 0 && "lg:pt-[20rem]"
           }`}
         >
           <a
@@ -60,9 +60,9 @@ function ProjectContainer() {
             target="blank"
             className={`bg-[${
               item.bgColor
-            }] block rounded-lg sm:w-[38rem] overflow-hidden w-full h-96 sm:h-[45rem] ${
-              index % 2 !== 0 && "sm:h-[35rem] sm:w-[25rem]"
-            } mt-10 sm:mt-0 relative overflow-hidden`}
+            }] block rounded-lg xl:w-[39vw] xl:h-[85vh] lg:w-[41vw] lg:h-[80vh] md:w-[100vw] sm:h-[70vh] w-full h-[40vh] overflow-hidden ${
+              index % 2 !== 0 && "lg:h-[35rem] lg:w-[25rem]"
+            } mt-5 sm:mt-0 relative overflow-hidden `}
           >
 
             <motion.img
@@ -79,15 +79,15 @@ function ProjectContainer() {
               muted
               loop
               autoPlay
-              className="h-full w-full scale-[1.1]"
+              className="h-full w-full lg:scale-[1.1] md:scale-[2] scale-[1.1]"
               src={item.video}
             ></video>
             
           </a>
 
-          <div className="sm:mt-3 bg-red-600">
+          <div className="sm:mt-3 my-2">
 
-            <h3 className="text-[5vw] sm:text-xl overflow-hidden font-bold sm:font-medium capitalize">
+            <h3 className="text-[4vw] sm:text-[2.9vw] md:text-[2.3vw] lg:text-xl leading-tight overflow-hidden font-bold sm:font-medium capitalize">
               <motion.span
                 initial={{ opacity: 0, y: "100%" }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -99,7 +99,7 @@ function ProjectContainer() {
               </motion.span>
             </h3>
 
-            <h3 className="text-[4vw] sm:text-lg overflow-hidden sm:font-light text-zinc-500 capitalize">
+            <h3 className="text-[3.5vw] sm:text-[2.7vw] md:text-[2vw] lg:text-lg overflow-hidden sm:font-light text-zinc-500 capitalize">
               <motion.span
                 initial={{ opacity: 0, x: "-100%" }}
                 whileInView={{ opacity: 1, x: 0 }}
