@@ -12,17 +12,16 @@ function OverlayCopy({ subheading, heading }) {
   const opacity = useTransform(scrollYProgress, [0.25, 0.5, 0.75], [0, 1, 0]);
   return (
     <motion.div
-      style={{
-        y,
-        opacity,
-      }}
+      style={{ y, opacity }}
       ref={targetRef}
       className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center text-white"
     >
-      <p className="mb-2 text-center text-xl md:mb-4 md:text-3xl">
+      <p className="mb-2 text-center xl:text-[1.3vw] lg:text-[1.6vw] md:text-[2.1vw] sm:text-[2.6vw] text-[4.5vw] md:mb-4 ">
         {subheading}
       </p>
-      <p className="text-center text-4xl font-bold md:text-7xl">{heading}</p>
+      <p className="text-center xl:text-[4vw] lg:text-[5vw] md:text-[6vw] sm:text-[6vw] text-[8vw] font-bold leading-tight ">
+        {heading}
+      </p>
     </motion.div>
   );
 }

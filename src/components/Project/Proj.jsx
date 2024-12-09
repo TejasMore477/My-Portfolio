@@ -5,13 +5,8 @@ import Description from "./Description";
 
 function Proj({ imgUrl, subheading, heading, descriptionData }) {
   return (
-    <div
-      style={{
-        paddingLeft: 12,
-        paddingRight: 12,
-      }}
-    >
-      <div className="relative h-[100vh] ">
+    <div>
+      <div className="relative sm:h-[100vh] h-[70vh] overflow-hidden rounded-3xl">
         <StickyImage imgUrl={imgUrl} />
         <OverlayCopy heading={heading} subheading={subheading} />
       </div>
