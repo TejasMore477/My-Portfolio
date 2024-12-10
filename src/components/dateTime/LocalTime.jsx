@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-const LocalTime = ({ pos = "end" }) => {
+const LocalTime = ({ pos = "end", pos2 = "end", about = false, paddingtop="[8.5vh]" }) => {
   const [currentTime, setCurrentTime] = useState(new Date());
-
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentTime(new Date());
@@ -32,19 +31,19 @@ const LocalTime = ({ pos = "end" }) => {
   const formattedDate = currentTime.toLocaleDateString("en-US", dateOptions);
 
   return (
-    <div className={`xl:py-10 pt-[8.5vh] xl:px-[4.5rem] px-5`}>
+    <div className={`xl:py-10 pt-${paddingtop} ${about ? "px-0":"xl:px-[4.5rem] px-5"}`}>
       <p
-        className={`text-${pos} font-Orbitron sm:text-xs text-[3vw] tracking-[0.2em] leading-none`}
+        className={`text-${pos} sm:text-${pos2} lg:text-${pos} font-Orbitron xl:text-[0.8vw] lg:text-[1vw] md:text-[1.25vw] sm:text-[1.7vw] text-[3vw] tracking-[0.2em] leading-none`}
       >
         tejasmore660@gmail.com
       </p>
       <p
-        className={`text-${pos} font-Orbitron sm:text-xs text-[3vw] tracking-[0.2em] leading-none text-redO`}
+        className={`text-${pos} sm:text-${pos2} lg:text-${pos} font-Orbitron xl:text-[0.8vw] lg:text-[1vw] md:text-[1.25vw] sm:text-[1.7vw] text-[3vw] tracking-[0.2em] leading-none text-redO`}
       >
         Maharashtra, {formattedTime.toLowerCase()}
       </p>
       <p
-        className={`text-${pos} font-Orbitron sm:text-xs text-[3vw] tracking-[0.2em] leading-none`}
+        className={`text-${pos} sm:text-${pos2} lg:text-${pos} font-Orbitron xl:text-[0.8vw] lg:text-[1vw] md:text-[1.25vw] sm:text-[1.7vw] text-[3vw] tracking-[0.2em] leading-none`}
       >
         {formattedDate}
       </p>
