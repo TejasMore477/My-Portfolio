@@ -3,6 +3,7 @@ import ContactMe from "./ContactMe";
 import LocalTime from "../dateTime/LocalTime";
 import { Tilt } from "@jdion/tilt-react";
 import { motion } from "framer-motion";
+import myImage from '/src/assets/images/profile/20241010_124829-02.jpeg'
 
 function About() {
   return (
@@ -22,18 +23,18 @@ function About() {
 
           <Tilt className="h-72 w-72 grid place-content-center overflow-hidden relative">
             <img
-              className="opacity-20 scale-[1] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-64 w-64 object-cover object-top rounded-md"
-              src="src/assets/images/profile/andres-hernandez-nlNR4zy7g_I-unsplash.jpg"
+              className="opacity-20 scale-[1] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-64 w-64 object-cover object-center rounded-md"
+              src={myImage}
               alt=""
             />
             <img
-              className="opacity-60 scale-[0.96] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-64 w-64 object-cover object-top rounded-md"
-              src="src/assets/images/profile/andres-hernandez-nlNR4zy7g_I-unsplash.jpg"
+              className="opacity-60 scale-[0.96] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-64 w-64 object-cover object-center rounded-md"
+              src={myImage}
               alt=""
             />
             <img
-              className="opacity-80 scale-[0.85] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-64 w-64 object-cover object-top rounded-md"
-              src="src/assets/images/profile/andres-hernandez-nlNR4zy7g_I-unsplash.jpg"
+              className="opacity-80 scale-[0.85] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-64 w-64 object-cover object-center rounded-md"
+              src={myImage}
               alt=""
             />
           </Tilt>

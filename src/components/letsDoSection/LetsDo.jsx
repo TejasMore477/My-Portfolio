@@ -2,6 +2,7 @@ import React from "react";
 import ContactMe from "../About/ContactMe";
 import { motion } from "framer-motion";
 import { Tilt } from "@jdion/tilt-react";
+import myImage from '/src/assets/images/profile/20241010_124949-01-01.jpeg'
 
 function LetsDo() {
   return (
@@ -31,20 +32,20 @@ function LetsDo() {
       <div className="lg:h-[50vh] md:h-[50vh] lg:w-[75vw] sm:w-[90vw] flex md:flex-row flex-col items-center md:justify-end sm:justify-between md:relative sm:static lg:gap-20 md:gap-16 gap-6">
         <Tilt className="xl:w-[19rem] lg:w-[26rem] md:w-[31rem] sm:w-[37vw] md:h-full sm:h-[37vh] w-[13rem] h-[15rem] bg-zinc-800 bg-opacity-10 backdrop-blur-sm rounded-lg flex items-center justify-center relative xl:-top-10 lg:-top-5 xl:left-10 lg:left-5 md:left-12">
           <img
-            src="src/assets/images/profile/lance-reis-TTdJV-K1IUg-unsplash.jpg"
+            src={myImage}
             alt="My Image"
-            className="opacity-20 scale-[1] absolute w-[95%] h-[95%] object-cover object-center rounded-md shadow-lg shadow-zinc-950"
+            className="opacity-20 scale-[1] absolute w-[95%] h-[95%] object-cover object-top rounded-md shadow-lg shadow-zinc-950"
           />
           <img
-            src="src/assets/images/profile/lance-reis-TTdJV-K1IUg-unsplash.jpg"
+            src={myImage}
             alt="My Image"
-            className="opacity-60 scale-[0.96] absolute w-[95%] h-[95%] object-cover object-center rounded-md shadow-lg shadow-zinc-950 "
+            className="opacity-60 scale-[0.96] absolute w-[95%] h-[95%] object-cover object-top rounded-md shadow-lg shadow-zinc-950 "
           />
 
           <img
-            src="src/assets/images/profile/lance-reis-TTdJV-K1IUg-unsplash.jpg"
+            src={myImage}
             alt="My Image"
-            className="opacity-80 scale-[0.85] absolute w-[95%] h-[95%] object-cover object-center rounded-md shadow-lg shadow-zinc-950 "
+            className="opacity-80 scale-[0.85] absolute w-[95%] h-[95%] object-cover object-top rounded-md shadow-lg shadow-zinc-950 "
           />
         </Tilt>
 
