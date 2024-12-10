@@ -14,8 +14,8 @@ function MenuPage({ showMenu, setShowMenu, handelMenu }) {
       animate={showMenu ? { y: 0 } : { y: -800 }}
       transition={{ duration: 0.6, delay: 0.1, ease: easeInOut }}
     >
-      <div className="bg-zinc-800 bg-opacity-10 backdrop-blur-sm sm:py-[1.4rem] pt-[1.7rem] xl:px-[4.5rem] px-[1.1rem] sm:rounded-3xl rounded-l-3xl">
-        <div className="w-full flex items-center justify-end ">
+      <div className="bg-zinc-800 bg-opacity-10 backdrop-blur-sm sm:py-[1.4rem] sm:pt-[1.7rem] pt-[1rem] xl:px-[4.5rem] px-[1.1rem] sm:rounded-3xl rounded-l-3xl">
+        <div className="w-full flex items-center justify-end">
           <Menu
             text="Close"
             showMenu={showMenu}
