@@ -49,13 +49,13 @@ function Mother({ loaderAnime }) {
             }
           >
             {/* Home Route */}
-            <Route path="/" element={<Home loaderAnime={loaderAnime} />} />
+            <Route path="/about" element={<Home loaderAnime={loaderAnime} />} />
 
             {/* Projects Route */}
             <Route path="/projects" element={<Projects />} />
 
             {/* About Route */}
-            <Route path="/about" element={<About />} />
+            <Route path="/" element={<About />} />
           </Route>
 
           {/* Wildcard Route for Page Not Found */}

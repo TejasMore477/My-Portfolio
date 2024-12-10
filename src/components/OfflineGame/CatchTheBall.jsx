@@ -52,9 +52,10 @@ function CatchTheBallGame({ onlineStatus }) {
     >
       <div className="w-full fixed text-center top-[20%] flex items-center flex-col ">
         <div className="text-center overflow-hidden">
-          <motion.h1 className="lg:text-[3rem] md:text-[5.5vw] text-[8vw] mb-4 font-Poppins leading-none tracking-tight">
+          <p className=" text-xs capitalize font-Poppins text-redO"> <span className="text-white">No InterNet !! </span>but still you can...</p>
+          <h1 className="lg:text-[3rem] md:text-[5.5vw] text-[8vw] mb-4 font-Poppins leading-none tracking-tight">
             Catch the Ball
-          </motion.h1>
+          </h1>
         </div>
         <p className="mb-2 lg:text-xl text-md">
           Time Left:{" "}
@@ -68,7 +69,7 @@ function CatchTheBallGame({ onlineStatus }) {
       {gameOver ? (
         <div className="text-center mt-10">
           <motion.h2
-            className="text-redO mt-5 lg:text-[6rem] md:text-[11vw] text-[14vw] leading-none tracking-tight mb-4 font-Poppins font-semibold "
+            className="text-redO mt-20 lg:text-[6rem] md:text-[11vw] text-[14vw] leading-none tracking-tight mb-4 font-Poppins font-semibold "
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.5, delay: 0 }}

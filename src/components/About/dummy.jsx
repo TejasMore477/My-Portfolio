@@ -1,0 +1,96 @@
+import React from "react";
+import ContactMe from "./ContactMe";
+import LocalTime from "../dateTime/LocalTime";
+import { Tilt } from "@jdion/tilt-react";
+import { motion } from "framer-motion";
+import myImage from '/src/assets/images/profile/20241010_124829-02.jpeg'
+
+function About() {
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.9, delay: 0.2 }} 
+      className="w-full h-screen xl:bg-red-9500 lg:bg-green-950 md:bg-yellow-950 sm:bg-fuchsia-950 xl:bg-neutral-950 xl:px-[4.5rem] sm:px-[2vw] px-5  py-16 grid place-content-center rounded-b-xl"
+    >
+      <div className="w-full h-full flex lg:flex-row md:flex-col items-center lg:justify-center justify-between gap-5">
+        <motion.div 
+        className="lg:w-1/4 w-full bg-zinc-100 bg-opacity-10 backdrop-blur-sm rounded-lg z-20 flex items-center gap-5 px-10 flex-col py-10"
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8 , delay:0.3}}
+        >
+
+          {/* <Tilt className="h-72 w-72 grid place-content-center overflow-hidden relative">
+            <img
+              className="opacity-20 scale-[1] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-64 w-64 object-cover object-center rounded-md"
+              src={myImage}
+              alt="MyiMAGE"
+            />
+            <img
+              className="opacity-60 scale-[0.96] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-64 w-64 object-cover object-center rounded-md"
+              src={myImage}
+              alt="MyiMAGE"
+            />
+            <img
+              className="opacity-80 scale-[0.85] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-64 w-64 object-cover object-center rounded-md"
+              src={myImage}
+              alt="MyiMAGE"
+            />
+          </Tilt> */}
+
+          <div>
+            <h2 className="font-poppins">
+              Blood@ <span className="text-redO">A+</span>
+            </h2>
+            <h2 className="items-center font-Poppins tracking-wider font-extralight pb-10">
+              Open for work and collaborations.
+            </h2>
+            <LocalTime pos={"start"} />
+          </div>
+        </motion.div>
+
+        <div className="w-2/3 h-full relative px-3 py-5">
+          <h3 className="w-full font-Poppins xl:text-[1.4vw] lg:text-[1.7vw] md:text-[2.2vw] sm:text-[3vw] text-[4.3vw] leading-tight font-light py-5">
+            I am <a className="text-redO font-Poppins">Tejas Madhukar More</a>,
+            a 3rd-year student and a creative web developer from Maharashtra,
+            India. I love building interactive websites that blend design and
+            functionality seamlessly.
+          </h3>
+
+          <div className="flex items-start justify-between gap-5">
+            <h3 className="w-1/2 font-Poppins leading-tight xl:text-[1.2vw] lg:text-[1.4vw] md:text-[1.7vw] sm:text-[2.2vw] text-[3.9vw] font-extralight py-4">
+              I’m still early in my journey and haven’t had the chance to work
+              with many companies yet, but I’m really excited to find
+              opportunities where my creativity and skills are appreciated.
+            </h3>
+
+            <h3 className="w-1/2 font-Poppins leading-tight xl:text-[1.2vw] lg:text-[1.4vw] md:text-[1.7vw] sm:text-[2.2vw] text-[3.9vw] font-extralight py-4">
+              I’m always learning and growing, and I’d love to work with a team
+              that values my work and helps me grow along the way.
+            </h3>
+          </div>
+
+          <p className="w-full font-Poppins xl:text-[1.4vw] lg:text-[1.7vw] md:text-[2.2vw] sm:text-[3vw] text-[4.3vw] leading-tight font-light py-5">
+            I've been interested in design and creativity since I was young.
+            What started as a hobby, learning from YouTube, soon became a real
+            passion. I improved my skills at{" "}
+            <a className="text-redO font-Poppins">Sheryians Coding School</a>,
+            where the{" "}
+            <a className="text-redO font-Poppins">Frontend Domination</a> course
+            helped boost both my creativity and problem-solving. For me, design
+            is all about tackling challenges with bold ideas and clear
+            communication. Over time, I've explored different areas, from UI/UX
+            and illustrations to product design, branding, and art direction.
+            Every project I work on is a chance to blend creativity with
+            practical solutions.
+          </p>
+
+          <ContactMe paddingY={0} />
+        </div>
+      </div>
+    </motion.div>
+  );
+}
+
+export default About;
