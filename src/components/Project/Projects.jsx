@@ -90,7 +90,7 @@ function Projects() {
         {ProjectData.map((project, index) => (
           <Proj
             key={index}
-            imgUrl={project.Image}
+            indeximage = {index}
             subheading={project.SubHeading}
             heading={project.Heading}
             descriptionData={project}
