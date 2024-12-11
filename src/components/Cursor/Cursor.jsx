@@ -71,7 +71,8 @@ function Cursor({ mousePosition, setMousePosition }) {
   }, [handleClick]);
 
   return (
-    <motion.div
+    <div className="hidden md:block">
+          <motion.div
       className="w-16 h-16 bg-white opacity-[0.28] rounded-full fixed z-40 pointer-events-none grid place-content-center"
       variants={variants}
       animate={cursorVariant}
@@ -79,6 +80,7 @@ function Cursor({ mousePosition, setMousePosition }) {
     >
       <div className="bg-zinc-950 w-1 h-1 rounded-full"></div>
     </motion.div>
+    </div>
   );
 }
 
