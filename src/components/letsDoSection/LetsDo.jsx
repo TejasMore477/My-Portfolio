@@ -6,7 +6,7 @@ import myImage from '/src/assets/images/profile/20241010_124949-01-01.jpeg'
 
 function LetsDo() {
   return (
-    <div className="w-full md:h-screen md:py-20 sm:py-12 py-8  xl:px-[4.5rem] sm:px-[2vw] px-5 bg-neutral-950 text-center relative flex flex-col items-center rounded-t-2xl">
+    <div className="w-full md:h-screen md:py-20 sm:py-12 py-8  xl:px-[4.5rem] sm:px-[2vw] px-5 bg-neutral-900 text-center relative flex flex-col items-center rounded-t-2xl">
       <div className="md:h-[35vh] w-full md:mb-3 sm:mb-10 mb-5 font-semibold font-Poppins">
         <h2 className="xl:text-[9.5vw] lg:text-[11vw] md:text-[12vw] sm:text-[12vw] text-[15vw] text-redO lg:leading-[6vw] sm:leading-[9vw] leading-[12vw] tracking-tighter">
           Collaborate,

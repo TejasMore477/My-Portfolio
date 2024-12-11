@@ -7,7 +7,7 @@ import myImage from "/src/assets/images/profile/20241010_124829-02.jpeg";
 
 function About() {
   return (
-    <div className="w-full lg:h-screen bg-neutral-950 xl:px-[4.5rem] sm:px-[2vw] px-5 sm:py-16 py-10 grid place-content-center rounded-b-xl">
+    <div className="w-full lg:h-screen bg-neutral-900 xl:px-[4.5rem] sm:px-[2vw] px-5 sm:py-16 py-10 grid place-content-center rounded-b-xl">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

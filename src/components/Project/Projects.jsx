@@ -86,7 +86,7 @@ function Projects() {
         </div>
       </div>
       
-      <div className="bg-neutral-950 rounded-t-2xl py-14 xl:px-[4.5rem] sm:px-[2vw] px-5">
+      <div className="bg-neutral-900 rounded-t-2xl py-14 xl:px-[4.5rem] sm:px-[2vw] px-5">
         {ProjectData.map((project, index) => (
           <Proj
             key={index}
