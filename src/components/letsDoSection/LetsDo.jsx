@@ -50,7 +50,7 @@ function LetsDo() {
         </Tilt>
 
         <div className="lg:w-[38rem] md:w-[50rem] md:text-start bg-zinc-8000 sm:px-0 px-3">
-          <div className="overflow-hidden xl:h-16">
+          <div className="overflow-hidden xl:h-fit">
             <motion.h2
               initial={{ opacity: 0, x: "-60%" }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -83,7 +83,7 @@ function LetsDo() {
             </motion.h3>
           </div>
 
-          <div className="overflow-hidden sm:h-6">
+          <div className="overflow-hidden">
             <motion.h2
               initial={{ opacity: 0, x: "-60%" }}
               whileInView={{ opacity: 1, x: 0 }}
