@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 :root{
-    --redOO: hsl(0,73.6%,64.3%);
+    --redOO: hsl(0, 85%, 71%);
     --zinc900: rgb(11, 11, 12);
 }
 
